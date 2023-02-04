@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "category_name": "Slider1",
+        "slider_image_link": "https://i.ibb.co/ct1xhxK/1.webp"
+    },
+    {
+        "id": 2,
+        "category_name": "Slider2",
+        "slider_image_link": "https://i.ibb.co/r736K25/2.webp"
+    },
+    {
+        "id": 3,
+        "category_name": "Slider3",
+        "slider_image_link": "https://i.ibb.co/K6mZp5v/3.webp"
+    }
+]

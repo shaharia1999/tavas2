@@ -1,0 +1,51 @@
+[
+    {
+        "id": 6,
+        "img_link": "https://i.ibb.co/vB2J73C/30062022220919-6943.jpg",
+        "title": "Mens Embroidered Exclusive Silk Fabric Premium Panjabi",
+        "price": 1508
+    },
+    {
+        "id": 7,
+        "img_link": "https://i.ibb.co/nrvpMPC/images-4.jpg",
+        "title": "Mens Embroidered Exclusive Silk Fabric Luxury Panjabi",
+        "price": 2500
+    },
+    {
+        "id": 3,
+        "img_link": "https://i.ibb.co/c2Spfr8/silk-cotton.webp",
+        "title": "Mens Embroidered Exclusive Silk Fabric Cotton Panjabi",
+        "price": 3500
+    },
+    {
+        "id": 5,
+        "img_link": "https://i.ibb.co/jZ0rFjV/fb89e501358a4b126224748f459b30c3.jpg",
+        "title": "Mens Eid Exclusive Silk Fabric Premium Panjabi",
+        "price": 4500
+    },
+    {
+        "id": 4,
+        "img_link": "https://i.ibb.co/d7v07gN/79c2bd85c0dbfe72233697779d53c736.jpg",
+        "title": "Mens Victory Exclusive Silk Fabric Premium Panjabi",
+        "price": 800
+    },
+    {
+        "id": 3,
+        "img_link": "https://i.ibb.co/mt7rY9G/images.jpg",
+        "title": "Mens Special Fabric Premium Panjabi",
+        "price": 4500
+    },
+    {
+    "id": 2,
+    "img_link": "https://i.ibb.co/jZ0rFjV/fb89e501358a4b126224748f459b30c3.jpg",
+        "title": "Mens Embroidered Exclusive Silk Fabric Indian Panjabi",
+        "price": 12000
+    },
+    {
+            "id": 1,
+            "img_link": "https://i.ibb.co/d7v07gN/79c2bd85c0dbfe72233697779d53c736.jpg",
+        "title": "Mens Embroidered Exclusive Silk Premium Panjabi",
+        "price": 8000
+    }
+]
+

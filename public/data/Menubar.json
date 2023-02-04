@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "menuTitle": "Home",
+        "permalink": "/",
+        "subMenu":""
+    },
+    {
+        "id": 2,
+        "menuTitle": "New Arrivals",
+        "permalink": "/new-arrivals",
+        "subMenu":""
+    },
+    {
+        "id": 3,
+        "menuTitle": "Clothing",
+        "permalink": "/clothing",
+        "subMenu":""
+    },
+    {
+        "id": 4,
+        "menuTitle": "Accessories",
+        "permalink": "/accessories",
+        "subMenu":""
+    },
+    {
+        "id": 5,
+        "menuTitle": "Sale",
+        "permalink": "/sale",
+        "subMenu":""
+    }
+]
