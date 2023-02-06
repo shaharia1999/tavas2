@@ -20,7 +20,7 @@ const CategorySlider = () => {
     }, [])
     return (
         <Fragment >
-            <div className='py-8 px-6'>
+            <div className='lg:py-8 lg:px-6 m:0 p-0 cetagory_mobile '>
             <Swiper
                 slidesPerView={1.3}
                 spaceBetween={2}
@@ -30,9 +30,9 @@ const CategorySlider = () => {
                 id='category-slider'
                 breakpoints={{
                     640: {
-                        slidesPerView: 2.5,
-                        slidesPerGroup: 2,
-                        spaceBetween: 10,
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                        spaceBetween: 5,
                     },
                     768: {
                         slidesPerView: 3.5,
@@ -47,8 +47,8 @@ const CategorySlider = () => {
             >
                 {
                     category.map((singleCategory, index) => (
-                        <SwiperSlide key={index} className="h-fit">
-                            <div className='relative text-center py-4 mx-2 category-slider-section'>
+                        <SwiperSlide key={index} className="h-fit py:0">
+                            <div className='relative text-center pt:8 lg:py-4 lg:mx-2 category-slider-section'>
                                 <img
                                     src={singleCategory.img_link} className="" alt="" />
                                 <div className='absolute top-2/4 left-2/4 -translate-y-1/2 -translate-x-1/2 text-white font-bold text-2xl lg:text-4xl uppercase'>

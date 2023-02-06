@@ -8,6 +8,8 @@ import "swiper/css/pagination";
 import { Autoplay } from "swiper";
 import axios from 'axios';
 
+// popUp
+
 const HomeNav = lazy(() => import('./HomeNav.js'))
 const CategorySlider = lazy(() => import('../../components/home_category_slider/CategorySlider.js'));
 const SignatureClub = lazy(() => import('../../components/signature_club/SignatureClub.js'));
@@ -48,13 +50,14 @@ const Home = () => {
         <div className='absolute bottom-16  bannerTitle '>
           <h1 className='bannerTitle'>TREDITIONAL <br /> ATTRIDE</h1>
           <button className=''>SHOP NOW</button>
+
+
         </div>
       </div>
-
       <CategorySlider />
       <OthersCategory />
       <NewArrival />
-      {/* <Information /> */}
+      <Information />
       <SignatureClub />
       <ProductFacility />
     </Fragment>

@@ -4,13 +4,15 @@ import siteLogoWhite from '../../assets/images/logo/T white.png';
 import siteLogoWhiteMobile from '../../assets/images/logo/T white mobile.png';
 import 'react-modern-drawer/dist/index.css'
 import { Link } from 'react-router-dom';
-import { IoSearchOutline, IoBagOutline } from "react-icons/io5";
+import { IoSearchOutline, IoBagOutline, IoClose, IoCloseOutline } from "react-icons/io5";
 import { AiOutlineUser } from "react-icons/ai";
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import Megamenu1 from '../../assets/megamenu_images/megamenu1.webp'
 import Megamenu2 from '../../assets/megamenu_images/megamenu2.webp'
 import { GiSelfLove } from 'react-icons/gi';
+import FilterItem from '../../components/search_drawer/FilterItem';
+
 
 // components or pages
 const TopBarMenu = lazy(() => import('./TopBarMenu.js'));
@@ -19,13 +21,36 @@ const SearchDrawer = lazy(() => import('../../components/search_drawer/SearchDra
 
 const HomeNav = (props) => {
     const [isNavOpen, setIsNavOpen] = useState(false);
-
     const [search, setSearch] = useState(false);
     const toggleSearch = () => {
         setSearch((prevState) => !prevState)
     }
+    // search
+    const [ser, setSer] = useState(false);
+    const toggleSearchs = () => {
+        setSer((prevState) => !prevState)
+    }
     return (
         <Fragment>
+            <div className={ser ? 'serch_box' : 'serch_box_show'}>
+                <div>
+                    {/* <loClose className="text-5xl text-black"></loClose> */}
+                    <IoCloseOutline className='text-5xl text-black closehIcon'
+                    onClick={toggleSearchs}
+                    />
+
+                </div>
+
+                <div className="serch_div" >
+                    <div className='serch_div1'>
+                        <input className=' text-3xl' placeholder='   Search...'>
+                        </input>
+                        <IoSearchOutline className='text-4xl text-black sarchIcon' />
+
+                    </div>
+                </div>
+                <FilterItem></FilterItem>
+            </div>
             <section className='pt-2 MOBILE-MENU flex lg:hidden bg-transparent z-10 absolute w-full'>
                 <div className='HAMBURGER-ICON space-y-2 cursor-pointer px-3'
                     onClick={() => setIsNavOpen((prev) => !prev)}
@@ -98,7 +123,7 @@ const HomeNav = (props) => {
                     <button
                         type="button"
                         className='search-menu-btn bg-transparent cursor-pointer flex px-3'
-                        onClick={toggleSearch}
+                        onClick={toggleSearchs}
                     >
                         <IoSearchOutline className='text-2xl text-white' />
                     </button>
@@ -165,9 +190,9 @@ const HomeNav = (props) => {
                     />
                 </Link>
                 <div className=' '>
-                    <RightNavbarItems />
+                    <RightNavbarItems setSer={setSer}/>
                 </div>
-         
+
             </div>
         </Fragment>
     );

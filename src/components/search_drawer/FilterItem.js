@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper";
 
-const NewArrival = () => {
+const FilterItem = () => {
     const [arrival, setArrival] = useState([]);
     useEffect(() => {
         axios
@@ -21,21 +21,21 @@ const NewArrival = () => {
     }, [])
     return (
         <Fragment>
-            <div className='new-arrival-section arribe h-screen lg:h-[100vh] cetagory_mobile2 pb-20'>
+            <div className='new-arrival-section arribe h-screen lg:h-[100vh] '>
                 <div className='grid grid-cols-2 mt-0 lg:mt-10 new-arrival-heading-section lg:mx-2'>
                     <div>
-                        <p className='uppercase sm:text-md lg:text-3xl text-[#121D45] pl-8 font-serif font-bold'>New Arrival</p>
+                        <p className='uppercase sm:text-md lg:text-3xl text-[#121D45] pl-8 font-serif font-bold'>Filter Products</p>
                     </div>
                     <div>
                         <p className='uppercase text-right sm:text-md lg:text-2xl text-[#121D45] pr-5 font-arial font-bold underline'>
                             <Link to="/">
-                                Shop Now 
+                                Shop Now
                                 {/* <span className='inline-block'><RxDoubleArrowRight /></span> */}
                             </Link>
                         </p>
                     </div>
                 </div>
-                <div className='pb-2 '>
+                <div className='pb-8  z-50 bg-whit'>
                     <Swiper
                         slidesPerView={1.3}
                         spaceBetween={2}
@@ -59,19 +59,19 @@ const NewArrival = () => {
                                 spaceBetween: 2,
                             },
                             992: {
-                                slidesPerView:2.5,
+                                slidesPerView: 3,
                                 slidesPerGroup: 2,
-                                spaceBetween: 0,
+                                spaceBetween: 2,
                             },
                         }}
                     >
                         {
                             arrival.map((singleArrival, index) => (
                                 <SwiperSlide>
-                                    <div key={index} className="new-arrival-slider-section arrive ">
-                                        <img src={singleArrival.img_link} className=" new-arrival-image pb-6" alt="" />
+                                    <div key={index} className="new-arrival-slider-section arrive">
+                                        <img src={singleArrival.img_link} className="pb-3 new-arrival-image" alt="" />
                                         <p className='text-left text-md h-14 font-sanf'>{singleArrival.title}</p>
-                                        <p className='text-left font-gilroybold text-[#121D45] pb-5 lg:pb-5'>BDT. {singleArrival.price}</p>
+                                        <p className='text-left font-gilroybold text-[#121D45] pb-28 lg:pb-5'>BDT. {singleArrival.price}</p>
                                     </div>
                                 </SwiperSlide>
                             ))
@@ -83,4 +83,5 @@ const NewArrival = () => {
     );
 };
 
-export default NewArrival;
+export default 
+    FilterItem;

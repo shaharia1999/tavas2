@@ -7,6 +7,7 @@ import { initializeApp } from "firebase/app";
 import firebase from 'firebase/compat/app';
 import { onAuthStateChanged } from 'firebase/auth'
 import 'firebase/compat/auth';
+import PanjabiProducts from'./pages/panjabi_products/PanjabiProducts.js'
 
 // components
 const TopNotificationBar = lazy(() => import('./components/top_notification_bar/NotificationBar.js'));
@@ -15,7 +16,7 @@ const Footer = lazy(() => import('./components/footer/Footer.js'));
 // pages
 const HomePage = lazy(() => import('./pages/home_page/Home.js'));
 const SignIn = lazy(() => import('./pages/authentication/PhoneAuth.js'));
-const PanjabiProducts = lazy(() => import('./pages/panjabi_products/PanjabiProducts.js'));
+// const PanjabiProducts = lazy(() => import('./pages/panjabi_products/PanjabiProducts.js'));
 const SinglePanjabiProduct = lazy(() => import('./pages/single_punjabi_product/SinglePanjabiProduct.js'));
 const AboutUs = lazy(() => import('./pages/about_us/AboutUs.js'));
 const ContactUs = lazy(() => import("./pages/contact_us/Contact.js"));

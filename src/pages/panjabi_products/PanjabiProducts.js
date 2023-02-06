@@ -1,13 +1,14 @@
 import axios from 'axios';
 import React, { Fragment, lazy, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../../components/menubar_without_transparent_background/Navbar.js';
+import FilterSortDrawer from '../../components/filters_and_sort_drawer/FilterSortDrawer.js';
+import MobileMenu from '../../components/mobile_menu/MobileMenu.js';
 // Drawer
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 
-const Navbar = lazy(() => import('../../components/menubar_without_transparent_background/Navbar.js'));
-const FilterSortDrawer = lazy(() => import('../../components/filters_and_sort_drawer/FilterSortDrawer.js'));
-const MobileMenu = lazy(() => import('../../components/mobile_menu/MobileMenu.js'));
+
 
 const PanjabiProducts = () => {
     const [panjabi, setPanjabi] = useState([]);

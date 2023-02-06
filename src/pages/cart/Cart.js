@@ -49,9 +49,9 @@ const Cart = () => {
                             </td>
                             <td>4900</td>
                             <td className='font-gilroybold text-red-600'>
-                                <Link>
+                               
                                     X
-                                </Link>
+                               
                             </td>
                         </tr>
                         <tr className='h-[70px]'>
@@ -65,9 +65,9 @@ const Cart = () => {
                             </td>
                             <td>4900</td>
                             <td className='font-gilroybold text-red-600'>
-                                <Link>
+                                
                                     X
-                                </Link>
+                              
                             </td>
                         </tr>
                         <tr className='h-[70px]'>
@@ -81,9 +81,9 @@ const Cart = () => {
                             </td>
                             <td>4900</td>
                             <td className='font-gilroybold text-red-600'>
-                                <Link>
+                                {/* <Link> */}
                                     X
-                                </Link>
+                                {/* </Link> */}
                             </td>
                         </tr>
                     </tbody>

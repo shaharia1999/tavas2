@@ -3,7 +3,7 @@ import siteLogoDark from '../../assets/images/logo/T Black.png';
 import { Link } from 'react-router-dom';
 
 // components or pages
-const TopBarMenu = lazy(() => import('../../pages/home_page/TopBarMenu.js'));
+import TopBarMenu from'../../pages/home_page/TopBarMenu.js';
 const RightNavbarItems = lazy(() => import('../../components/right_navbar_items/RightNavbarItems.js'));
 
 const Navbar = () => {

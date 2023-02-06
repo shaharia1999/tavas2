@@ -258,11 +258,29 @@ z-index: 10;
 /* .category-slider-section{
 background-color: red;
 } */
-.category-slider-section img {
+/* .cetagory_parants{
   height: 100vh !important;
-  width: 100% !important;
+  background-color: red !important;
 
+} */
+/* .category-slider-section{
+  height: 100vh !important;
+    background-color: red !important;
+    margin: 0;
+    padding: 0%;
+} */
+.cetagory_mobile{
+  height: 100vh;
 }
+.cetagory_mobile img{
+  height: 100%;
+}
+ .category-slider-section img {
+  height:100vh!important;
+  width: 100% !important;
+  /* margin-top: 290px;  */
+  }
+
 .othercatagory1{
   position: absolute;
   bottom: 150px;
@@ -292,6 +310,54 @@ background-color: red;
   margin-top:40px ; */
   font-size: 2rem;
   font-family: 'glory';
+}
+@media screen and (max-width: 660px){
+  .cetagory_mobile {
+      height: 50vh;
+      padding-top:20px;
+    }
+
+        .cetagory_mobile1{
+          padding-top: 50px !important;
+          margin-top: 50px;
+          height: 50vh;
+          margin-top: 60px !important;
+        }
+       .cetagory_mobile2{
+          height:60vh;
+          padding-top: 20px;
+          margin-top: 130px;
+       }
+ 
+    .othercatagory {
+        font-size: 2rem;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: bold;
+        text-align: center;
+        align-items: center;
+        font-weight: 600;
+        text-shadow: 1px 1px black;
+        line-height: 40px;
+      }
+
+   
+            .othercatagory1-button {
+              background-color: #141e41;
+              padding: 10px 30px;
+              /* margin-left: 50px;
+        margin-top:40px ; */
+              font-size: 1.5rem;
+              font-family: 'glory';
+            }
+     .store{
+      height: 50vh;
+      width: 100%;
+      background-color: red;
+      /* margin-top:300px ; */
+      margin-top: 200px;
+      overflow: hidden;
+     }
 }
 .mySwiper1 {
    background: red;
@@ -327,6 +393,15 @@ background-color: red;
     height: 500px !important;
     width: 200px;
   } */
+}
+.arrive{
+  height: 600px !important;
+  padding: 0;
+  
+}
+.arrive img {
+  width: 100% !important;
+  
 }
 
 /* ==================== 6. CategorySlider, OthersCategory, NewArrival End ==================== */
@@ -382,6 +457,100 @@ background-color: red;
 }
 
 /* ==================== 8. Topbarmenu End ==================== */
+/* ========================== serch start =============== */
+
+/* =================== modal =================== */
+.MODAL-popUP{
+  background-color: #343133a4;
+  font-family:'glory';
+
+}
+.MODAL-popUP button{
+  background-color: #020923;
+  z-index: 20;
+}
+.MODAL-popUP p{
+  background-color: #020923;
+  color: white;
+  z-index: 20;
+}
+.serch_box{
+  /* margin-top: -500px; */
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 10000;
+ 
+}
+.serch_box_show{
+    margin-top: -1000px;
+    width: 100%;
+    background-color: #fff;
+    /* position: absolute; */
+    z-index: 100000;
+    display:none !important;
+ 
+}
+.serch_div{
+  height:280px ;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+  
+}
+.serch_div1{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: red;
+}
+.serch_div input{
+  width:800px;
+  padding: 20px 60px;
+  border-bottom: 1px solid black;
+  outline: none;
+
+
+}
+.sarchIcon{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+
+}
+.closehIcon{
+   position: absolute;
+    right:0;
+    margin-top: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 660px){
+.serch_div input {
+    width: 300px;
+    padding: 10px 30px;
+      border-bottom: 1px solid black;
+      outline: none;
+  }
+    .serch_div {
+      /* height: 100px; */
+      /* background-color: red; */
+  
+    }
+        .serch_div {
+          height: 250px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+    
+        }
+    
+}
+/* ========================== serch end =============== */
 
 /* ==================== 9. MobileMenu Start ==================== */
 .hideMenuNav {

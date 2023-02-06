@@ -21,7 +21,8 @@ const OthersCategory = () => {
     }, [])
 
     return (
-        <Fragment>
+        <Fragment >
+            <div className="cetagory_parants cetagory_mobile1">
             <Swiper
                 slidesPerView={1.3}
                 // spaceBetween={2}
@@ -38,23 +39,23 @@ const OthersCategory = () => {
                     640: {
                         slidesPerView: 2.5,
                         slidesPerGroup: 2,
-                        spaceBetween: 10,
+                        spaceBetween: 0,
                     },
                     768: {
                         slidesPerView: 3.5,
                         slidesPerGroup: 3,
                     },
                     1024: {
-                        slidesPerView: 3,
+                        slidesPerView: 2.5,
                         slidesPerGroup: 3,
-                        spaceBetween: 10,
+                        spaceBetween: 0,
                     },
                 }}
             >
                 {
                     othersCategory.map((othersSingleCategory, index) => (
                         <SwiperSlide key={index} className="h-fit">
-                            <div className='relative text-center p-0 m-0 category-slider-section'>
+                            <div className='relative text-center  m-0 category-slider-section other_cateagory'>
                                 <img
                                     src={othersSingleCategory.img_link} className="object-cover" alt="" />
                                 <div className='absolute top-2/4 left-2/4 -translate-y-1/2 -translate-x-1/2 text-white font-bold text-4xl uppercase '>
@@ -70,6 +71,7 @@ const OthersCategory = () => {
                     ))
                 }
             </Swiper>
+            </div>
         </Fragment>
     );
 };
