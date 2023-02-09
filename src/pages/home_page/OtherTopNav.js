@@ -21,13 +21,13 @@ const OtherTopNav = () => {
                             <button type="" className='cursor-pointer font-gilroy'>New Arrivals</button>
                         </a>
                     </li> */}
-                    <li className='flex justify-between px-5  pt-8 '>
+                    <li className='flex justify-between px-2  pt-8 '>
                         <a href="/panjabis">
                             <button type="" className='cursor-pointer  special_otehr_nav'>CLOTH &</button>
                         </a>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                     </li>
-                    <li className='flex justify-between px-5  pt-8 group'>
+                    <li className='flex justify-between px-2  pt-8 group'>
                         {/* shop-btn */}
                         <button type="" className='cursor-pointer special_otehr_nav'>SHOP </button>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
@@ -55,7 +55,7 @@ const OtherTopNav = () => {
                             </div>
                         </div>
                     </li>
-                    <li className='flex justify-between px-5  pt-8 '>
+                    <li className='flex justify-between px-2  pt-8 '>
                         <button type="" className='cursor-pointer 	special_otehr_nav'>ACCESSORIES  </button>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                     </li>
