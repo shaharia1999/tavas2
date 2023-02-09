@@ -4,7 +4,7 @@ import signatureLogo from '../../assets/images/signature_logo/Tavaas.png'
 const SignatureClub = () => {
     return ( 
         <Fragment>
-            <div className="bg-[#D9D9D9] p-6 h-[500px] relative">
+            <div className="bg-[#D9D9D9] p-6 h-[100vh] relative">
                 <div className='absolute top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4'>
                     <img className='mx-auto h-[100px] w-[165px]' src={signatureLogo} alt="" />
                     <div className='lg:w-[860px] w-[320px] mx-auto'>

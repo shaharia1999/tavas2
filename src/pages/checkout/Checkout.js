@@ -1,6 +1,8 @@
 import React from 'react';
 import { lazy } from 'react';
 import { Fragment } from 'react';
+import OtherNav from '../../components/menubar_without_transparent_background/OtherNav.js';
+import "../../assets/css/style.css"
 
 // components or pages
 const Navbar = lazy(() => import('../../components/menubar_without_transparent_background/Navbar.js'));
@@ -8,18 +10,19 @@ const Navbar = lazy(() => import('../../components/menubar_without_transparent_b
 const Checkout = () => {
     return (
         <Fragment>
-            <Navbar />
-            <p className='text-center text-[#121D45] text-3xl uppercase py-5'>Checkout</p>
+            {/* <Navbar /> */}
+            <OtherNav></OtherNav>
+            <p className='text-center font-bold lg:font-extrabold text-[#121D45] text-3xl uppercase py-5'>Checkout</p>
             <div className="container p-12 mx-auto">
                 <div className="flex flex-col w-full px-0 mx-auto md:flex-row">
-                    <div className="flex flex-col md:w-full">
-                        <h2 className="mb-4 font-bold md:text-xl text-heading ">Shipping Address
+                    <div className="flex flex-col md:w-full checkUot_first">
+                        <h2 className="mb-4 font-bold md:text-xl lg:text-3xl text-heading ">Shipping Address
                         </h2>
                         <form className="justify-center w-full mx-auto" method="post" action>
                             <div className="">
                                 <div className="space-x-0 lg:flex lg:space-x-4">
                                     <div className="w-full lg:w-1/2">
-                                        <label for="firstName" className="block mb-3 text-sm font-semibold text-gray-500">First
+                                        <label for="firstName" className="block mb-3 text-1xl font-semibold text-black">First
                                             Name</label>
                                         <input name="firstName" type="text" placeholder="First Name"
                                             className="w-full px-4 py-3 text-sm border border-gray-300 rounded lg:text-sm focus:outline-none focus:ring-1 focus:ring-blue-600" />
@@ -66,7 +69,7 @@ const Checkout = () => {
                                     <label className="flex items-center text-sm group text-heading">
                                         <input type="checkbox"
                                             className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
-                                        <span className="ml-2">Save this information for next time</span></label>
+                                        <span className="ml-2 font-bold ">Save this information for next time</span></label>
                                 </div>
                                 <div className="relative pt-3 xl:pt-6"><label for="note"
                                     className="block mb-3 text-sm font-semibold text-gray-500"> Notes
@@ -78,7 +81,7 @@ const Checkout = () => {
                                     <label className="flex items-center text-sm group text-heading">
                                         <input type="checkbox"
                                             className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
-                                        <span className="ml-2">All of my information are correct</span></label>
+                                        <span className="ml-2 font-bold text-black">All of my information are correct</span></label>
                                 </div>
                                 <div className="mt-4">
                                     <button

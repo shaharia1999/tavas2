@@ -91,9 +91,9 @@ const Footer = () => {
                             <div className='w-6/12 lg:w-auto py-0 lg:py-0 mx-0 lg:mx-10'>
                                 <div className='footer-context-block'>
                                     <div className='footer-context-title mb-7'>
-                                        <p className='font-gilroybold text-white'>You can pay by</p>
+                                        <p className='font-gilroybold text-white pl-2'>You can pay by</p>
                                     </div>
-                                    <div className='footer-list-menu'>
+                                    <div className='footer-list-menu pl-2'>
                                         <ul className='list-none flex flex-wrap w-44'>
                                             <li className="mb-5 flex-[33.33%] lg:flex-[50%] p-1 lg:p-0">
                                                 <img src="https://kx-ilyn-shop-s3.s3.amazonaws.com/static/images/payment/footer-payment/visa.svg" alt="" />

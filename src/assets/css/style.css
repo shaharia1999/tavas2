@@ -147,6 +147,14 @@
   padding: 0;
   
 }
+.HAMBURGER-ICON_close{
+  color: white !important;
+  background-color: white;
+  font-size: 27px;
+}
+.home_serch{
+    font-size: 27px;
+}
 
 .top-bar-container {
   position: absolute;
@@ -155,8 +163,16 @@
 
 .special{
 letter-spacing:0.5px !important;
-font-family: 'Glory';
+font-family: 'glory';
 color: #fff;
+font-size: 18px;
+font-weight: 600;
+z-index: 10;
+}
+.special_otehr_nav{
+letter-spacing:0.5px !important;
+font-family: 'glory';
+color: black;
 font-size: 18px;
 font-weight: 600;
 z-index: 10;
@@ -166,9 +182,22 @@ z-index: 10;
   font-size: 25px;
   z-index: 10;
 }
+.right-nav-Other{
+  color: black;
+  font-size: 25px;
+  z-index: 10;
+  font-family: 'glory';
+}
+/* .right-nav-other{
+    color: red;
+    font-size: 40px !important;
+    z-index: 10;
+
+} */
 .swiper-container {
   width: 480px;
 }
+
 
 @media screen and (max-width: 640px) {
   .header-section {
@@ -177,6 +206,14 @@ z-index: 10;
   .main-mobile-menu {
     display: none;
   }
+    .mobile-nav-mega{
+      width: 80%;
+      position: absolute;
+      top:0;
+      left:0;
+      border: none;
+    }
+
     .bannerTitle h1{
         font-size: 3rem;
           color: white;
@@ -293,7 +330,7 @@ background-color: red;
 
 }
 .othercatagory {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
           color: white;
           font-family: Arial, Helvetica, sans-serif;
           font-style: bold;
@@ -305,10 +342,10 @@ background-color: red;
 }
 .othercatagory1-button{
   background-color: #141e41;
-  padding: 20px 60px;
+  padding: 10px 30px;
   /* margin-left: 50px;
   margin-top:40px ; */
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'glory';
 }
 @media screen and (max-width: 660px){
@@ -439,6 +476,29 @@ background-color: red;
 
 .top-bar-menu {
   overflow: visible !important;
+ 
+}
+/* .top-bar-menu{
+  background-color:red ;
+} */
+.right-ber-menu2{
+  z-index: 10;
+ height: 300px;
+ width: 100%;
+ position: relative;
+ margin-top: 50px;
+ padding-right: 40px;
+
+}
+.right-ber-menu2_other{
+  z-index: 10;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+    padding-right: 40px;
+    left: 0%;
+   
 }
 
 .inner-mega-menu {
@@ -461,8 +521,9 @@ background-color: red;
 
 /* =================== modal =================== */
 .MODAL-popUP{
-  background-color: #343133a4;
+  background-color: #74746ed3;
   font-family:'glory';
+  z-index: 10000;
 
 }
 .MODAL-popUP button{
@@ -558,7 +619,7 @@ background-color: red;
 }
 
 .mobile-menu {
-  background-color: transparent !important;
+  /* background-color: red !important; */
 }
 
 .showMenuNav {
@@ -569,15 +630,25 @@ background-color: red;
   top: 0;
   left: 0;
   background: white;
-  border: 1px solid black;
   z-index: 10;
   display: flex;
   flex-direction: column;
   padding-top: 120px;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 50px;
   z-index: 100 !important;
 }
+.showMenuNav a{
+  font-size: 18px;
+  font-family: 'glory';
+  font-weight: 400;
+}
+/* .mobile-nav-mega_first_cetagory{
+  background-color: red;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */
 
 /* ==================== 9. MobileMenu End ==================== */
 
@@ -588,7 +659,50 @@ background-color: red;
     visibility: hidden;
   }
 }
+/* ========================panjabi===================== */
 
+.panjabisProducts_img-dev{
+  position:relative !important;
+  height: 400px;
+  /* background-color: red; */
+
+}
+.panjabisProducts_img-dev img{
+   height: 100%;
+   width: 100%;
+
+}
+.panjabisProducts_img-dev::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.341);
+  height: 100px;
+  width: 100%;
+  z-index: 1000;
+  color: black;
+  display: none;
+}
+.panjabisProducts_img-dev::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.341);
+  height: 100px;
+  width: 100%;
+  z-index: 1000;
+  color: black;
+  display: none;
+}
+.panjabisProducts_img-dev:hover.panjabisProducts_img-dev::before{
+    display: block;
+}
+.panjabisProducts_img-dev:hover.panjabisProducts_img-dev::after{
+    display: block;
+}
+/* ========================panjabi===================== */
 /* ==================== 10. Sidebar End ==================== */
 
 /* ==================== 11. Footer Start ==================== */
@@ -600,3 +714,317 @@ background-color: red;
 }
 
 /* ==================== 11. Footer End ==================== */
+
+
+
+/* =======================Single Page Start ==================================== */
+/* .singlePage{
+overflow: hidden;
+background-color: #020923;
+position: relative;
+} */
+
+.single_parants{
+     position: relative !important;
+     
+}
+ .singlePage .second-section {
+   background-color: white;
+
+ }
+.first-section_parantes_div{
+  width: 70%;
+}
+.second-section-div{
+  position: sticky !important;
+  top:20px;
+
+}
+@media screen and (max-width: 640px) {
+  .first-section_parantes_div {
+      width: 90%;
+    }
+  
+    
+.single_parants{
+  display: block;
+}
+}
+/* =======================Single Page End ==================================== */
+
+.Parants_mobile{
+z-index: 10000;
+}
+/* panjabis Product Starrt */
+.panjabisProducts{
+  position: relative;
+  font-family: "glory";
+}
+.wish_love{
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  /* z-index: 200; */
+ 
+}
+.sale{
+    position: absolute;
+      top: 20px;
+      left: 10px;
+      cursor: pointer;
+      /* z-index: 200; */
+      background-color: white;
+      padding: 5px 10px;
+      color: black;
+      font-weight: 400;
+
+}
+/* panjabis Product  End */
+/* Card Start */
+.card_tr{
+  background-color: #E9EBEC;
+  border-radius: 2px;
+  box-shadow:5px 3px 5px 5px #888888 ;
+  font-family: 'glory';
+  font-weight: 800;
+  font-size: 20px;
+
+}
+@media screen and (max-width: 640px){
+  .card_tr {
+      background-color: #E9EBEC;
+      border-radius: 2px;
+      box-shadow: 2px 2px 2px 2px #888888;
+      font-family: 'glory';
+      font-weight: 800;
+      font-size: 16px;
+  
+    }
+}
+/* Card End */
+/*  Check Out  Start */
+.checkUot_first{
+  padding: 30px;
+  font-family: 'glory';
+  /* box-shadow: 0.5px 0.5px 0.5px black; */
+}
+.checkUot_first label, span{
+  color: black;
+  font-size: 18px;
+}
+/*  Check Out  End */
+/* openg my account */
+.opening-myAccount{
+  /* background-color: red; */
+  width: 300px;
+  height: 500px;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+}
+.opening-myAccount img{
+  height: 80%;
+}
+.opening-myAccount button{
+  border-radius: 50px;
+  background-color: #e9ebec;
+}
+/* myAccount Start */
+.myAccout_ul{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  /* box-shadow: 5px 5px  5px #888888; */
+}
+.myAccout_ul li{
+font-size: 20px;
+margin-top: 30px;
+font-family: 'glory';
+cursor: pointer;
+}
+.myAccout_ul li:hover{
+  font-weight: 700;
+}
+.myAccout_info{
+  width: 100%;
+  margin-right: 40px;
+  font-family: 'glory';
+  padding: 30px;
+}
+.account_info{
+  width: 60%;
+}
+/* Contart start */
+#contract {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* background: url(images/dark-bg.jpg); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contract-container {
+  width: 1170px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-bottom: 70px;
+
+
+}
+
+.contract-row1 {
+  width: 30%;
+  height: auto;
+}
+
+.contract-row1 img {
+  width: 100%;
+  height: 90%;
+}
+
+.contract-row2 {
+  height: auto;
+}
+
+p.contract-title {
+  font-size: 18px;
+  color: #020923;
+  font-family: arial;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.contract-row2 h3 {
+  font-size: 2.5rem;
+  font-family: arial;
+  font-weight: 600;
+}
+
+.contract-span {
+  width: 100px;
+  border-top: 4px solid #020923;
+}
+
+p.contract-discription {
+  font-size: 15px;
+  padding-top: 20px;
+ 
+}
+
+form {
+  width: 100%;
+  padding-right: 20px;
+
+}
+
+.name-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-email input {
+  color: black;
+  width: 48%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.name-email:nth-child(2) {
+  margin-top: 20px;
+}
+
+::-webkit-input-placeholder {
+  padding-left: 15px;
+  color: black;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+textarea {
+  margin-top: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contract-btn {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  width: 200px;
+  height: 50px;
+  color: WHITE;
+  BACKGROUND-COLOR: #020923;
+  BORDER: NONE;
+  OVERFLOW: HIDDEN;
+}
+
+@media(max-width:940px) {
+  .contract-container {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .contract-row1 {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .contract-row2 {
+    width: 100%;
+  }
+}
+/* Contart End */
+/* myAccount End */
+/* Model Pop Start */
+
+.MODAL-popUP_onLoad {
+      /* background-color: #141213c2; */
+      font-family: 'glory';
+      z-index: 10000;
+      position: relative;
+  
+    }
+    .MODAL-popUP_onLoad img{
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+        .MODAL-popUP_onLoad input,h3{
+          z-index: 20;
+          color: black;
+        }
+     .MODAL-popUP_onLoad button {
+      background-color: #020923;
+      z-index: 20;
+    }
+  
+        .MODAL-popUP_onLoad p {
+      background-color: #020923;
+      color: white;
+      z-index: 20;
+    }
+/* Model Pop End */
+/* Puse Notafication Start */
+.puseNotafication{
+  margin: 30px;
+  background-color: rgb(204, 194, 194);
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgb(161, 153, 153);
+  font-family: 'glory';
+}
+.puseNotafication img{
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+}
+/* Puse Notafication End */

@@ -1,5 +1,5 @@
 import React, { Fragment, lazy, useState } from 'react';
-import { IoSearchOutline, IoBagOutline, IoCloseOutline,  } from "react-icons/io5";
+import { IoSearchOutline, IoBagOutline, IoCloseOutline, } from "react-icons/io5";
 import { GiSelfLove } from "react-icons/gi";
 import { ImGoogle } from "react-icons/im";
 import { AiFillFacebook, AiOutlineUser } from "react-icons/ai";
@@ -14,11 +14,11 @@ import "../../assets/css/style.css"
 const CartDrawer = lazy(() => import('../../components/cart_drawer/CartDrawer.js'));
 const SearchDrawer = lazy(() => import('../../components/search_drawer/SearchDrawer.js'));
 
-const RightNavbarItems = (props) => {
-    const {setSer}=props;
-    // redu
+const OtherRight = (props) => {
+    const { setSer } = props;
+    // redux
     const CartCount = useSelector((state) => state.count);
-  
+
     // Drawer
     const [isOpen, setIsOpen] = useState(false)
     const toggleDrawer = () => {
@@ -37,18 +37,18 @@ const RightNavbarItems = (props) => {
     // serch_div
     return (
         <Fragment>
-      
+
             <div className='top-bar-container '>
                 {/* site logo */}
-                <div className='  right-ber-menu2 z-10 relative '>
+                <div className='  right-ber-menu2_other z-10 relative '>
                     {/* cart button */}
                     <button
                         type="button"
-                        className='shopping-cart-btn float-right text-left w-30    cursor-pointer -translate-x-1/2 flex items-center  '
+                        className='shopping-cart-btn float-right text-left w-30 cursor-pointer -translate-x-1/2 flex items-center  '
                         onClick={toggleDrawer}
                     >
-                        <IoBagOutline className='text-2xl right-nav' />
-                        <span className='ml-1 pt-1 special'>{CartCount}</span>
+                        <IoBagOutline className='text-2xl right-nav-Other' />
+                        <span className='ml-1 pt-1 special_otehr_nav'>{CartCount}</span>
                     </button>
                     <Drawer
                         open={isOpen}
@@ -62,16 +62,16 @@ const RightNavbarItems = (props) => {
                         </>
                     </Drawer>
                     {/* <a href="/signin"> */}
-                        <button
-                            type="button"
-                            className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
-                            <AiOutlineUser className='text-2xl right-nav' />
+                    <button
+                        type="button"
+                        className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
+                        <AiOutlineUser className='text-2xl right-nav-Other' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
-                        <label for="my-modal-6" className='ml-1 special'>SIGN IN</label>
-                        </button>
+                        <label for="my-modal-3" className='ml-1 special_otehr_nav'>SIGN IN</label>
+                    </button>
                     {/* </a> */}
                     {/* pop Up */}
-                    
+
                     <button
                         type="button"
                         className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
@@ -79,25 +79,25 @@ const RightNavbarItems = (props) => {
                             setSer((prevState) => !prevState)
                         }}
                     >
-                        <IoSearchOutline className='text-3xl right-nav' />
-                        <span className='ml-1 special'>SEARCH</span>
+                        <IoSearchOutline className='text-3xl right-nav-Other' />
+                        <span className='ml-1 special_otehr_nav'>SEARCH</span>
                     </button>
                     <button
                         type="button"
                         className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
                         onClick={toggleSearch}
                     >
-                        <GiSelfLove className='text-2xl right-nav' />
-                        <span className='ml-1 special'>WISHLIST</span>
+                        <GiSelfLove className='text-2xl right-nav-Other' />
+                        <span className='ml-1 special_otehr_nav'>WISHLIST</span>
                     </button>
-                         {/* modal 1 */}
+                    {/* modal 1 */}
                     {/* ============================== modal 1 =================================================*/}
                     <input type="checkbox" id="my-modal" class="modal-toggle" />
                     <div class="modal">
                         <div class="modal-box MODAL-popUP">
                             <h3 class="font-bold  text-center text-white py-5 text-2xl ">Log in</h3>
                             <div className='flex justify-center'>
-                                <input type="text" placeholder="Number" class="input input-bordered w-full max-w-xs justify-center" />
+                                <input type="text" placeholder="Number/email" class="input input-bordered w-full max-w-xs justify-center" />
                             </div>
                             <div class='flex justify-center pt-10  '>
                                 {/* <button className='btn block text-center px-24'>cuntinue</button> */}
@@ -112,9 +112,9 @@ const RightNavbarItems = (props) => {
                             <div class="modal-action ">
                                 <label for="my-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                             </div>
-                            {/* <div class="modal-action ">
+                            <div class="modal-action ">
                                 <label for="my-modal-6" class="btn btn-sm btn-circle absolute left-2 top-2">OTP</label>
-                            </div> */}
+                            </div>
                             <div className='flex justify-center mt-10'>
 
 
@@ -218,7 +218,7 @@ const RightNavbarItems = (props) => {
                     </div>
                     {/*    ==================== model 3  end ======================================================== */}
 
-                       
+
 
                     <Drawer
                         open={search}
@@ -232,10 +232,10 @@ const RightNavbarItems = (props) => {
                         </>
                     </Drawer>
                 </div>
- 
+
             </div>
         </Fragment>
     );
 };
 
-export default RightNavbarItems;
+export default OtherRight;

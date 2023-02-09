@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "img_link": "https://i.ibb.co/Z241L1g/download-1.jpg",
+        "title": "Outlate",
+        "related_link": "/"
+    },
+    {
+        "id": 2,
+        "img_link": "https://i.ibb.co/JBjRKYX/download-2.jpg",
+        "title": "Store ",
+        "related_link": "/"
+    },
+    {
+        "id": 3,
+        "img_link": "https://i.ibb.co/0JjvR7Z/download-3.jpg",
+        "title": "AboutUs",
+        "related_link": "/"
+    },
+    {
+        "id": 4,
+        "img_link": "https://i.ibb.co/Z241L1g/download-1.jpg",
+        "title": "Outlate",
+        "related_link": "/"
+    },
+    {
+        "id": 5,
+        "img_link": "https://i.ibb.co/JBjRKYX/download-2.jpg",
+        "title": "Store ",
+        "related_link": "/"
+    },
+    {
+        "id": 6,
+        "img_link": "https://i.ibb.co/0JjvR7Z/download-3.jpg",
+        "title": "AboutUs",
+        "related_link": "/"
+    }
+    
+]

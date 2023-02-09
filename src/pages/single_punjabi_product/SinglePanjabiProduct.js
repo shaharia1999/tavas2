@@ -14,10 +14,12 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import "../../assets/css/style.css"
 
 // Drawer
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
+import OtherNav from '../../components/menubar_without_transparent_background/OtherNav';
 
 // component and pages
 const Navbar = lazy(() => import('../../components/menubar_without_transparent_background/Navbar.js'));
@@ -70,9 +72,9 @@ const SinglePanjabiProduct = () => {
 
     return (
         <Fragment>
-            <Navbar />
+            <OtherNav></OtherNav>
             <MobileMenu />
-            <div className='pt-24 lg:pt-0 lg:mt-16 mx-auto px-5'>
+            <div className='pt-24 lg:pt-0 lg:mt-16 mx-auto px-5 singlePage font-glory'>
                 {isOpen && <Lightbox
                     imageTitle={location.state.galleryImages[imgIndex].title}
                     imageCaption={location.state.galleryImages[imgIndex].caption}
@@ -83,8 +85,9 @@ const SinglePanjabiProduct = () => {
                     onMovePrevRequest={() => setImgIndex((imgIndex + location.state.galleryImages.length - 1) % location.state.galleryImages.length)}
                     onMoveNextRequest={() => setImgIndex((imgIndex + 1) % location.state.galleryImages.length)}
                 />}
-                <div className='grid lg:grid-cols-2 sm:grid-cols-1 pt-3 new-arrival'>
-                    <div>
+                {/* lg:grid-cols-2 */}
+                <div className='flex sm:grid-cols-1 pt-3 new-arrival single_parants'>
+                    <div className='first-section_parantes_div '>
                         <div className='grid grid-cols-2 first-section'>
                             <img
                                 src={location.state.galleryImages?.[0]} alt="gg"
@@ -127,7 +130,8 @@ const SinglePanjabiProduct = () => {
                             className='w-1/2 px-1 h-auto mx-auto py-1 sixth-section'
                             onClick={() => setIsOpen(true)} />
                     </div>
-                    <div className='second-section'>
+                    <div className='second-section lg:ml-10  '>
+                        <div className='second-section-div'>
                         <p className='text-center font-gilroy text-2xl'>{location.state.product_title}</p>
                         <p className='text-center text-gray-400 font-gilroy'>{location.state.code}</p>
                         <p className='text-center font-gilroybold text-xl'>BDT {location.state.regular_price}</p>
@@ -235,6 +239,8 @@ const SinglePanjabiProduct = () => {
                                 </a>
                             </div>
                         </div>
+                        </div>
+                        {/*  */}
                     </div>
                 </div>
             </div>

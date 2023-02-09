@@ -8,6 +8,17 @@ import firebase from 'firebase/compat/app';
 import { onAuthStateChanged } from 'firebase/auth'
 import 'firebase/compat/auth';
 import PanjabiProducts from'./pages/panjabi_products/PanjabiProducts.js'
+import Sale from './components/Sale/Sale';
+import MyAccountNew from './components/MyAccount/MyAccountNew';
+import PrivetPolicy from './pages/privetPolicy/PrivetPolicy';
+import SizeGide from './pages/SizeGide/SizeGide';
+import LotaraliProgram from './pages/LotaraliProgram/LotaraliProgram';
+import ShoppingPolicy from './pages/ShoppingPolicy/ShoppingPolicy';
+import Return from './pages/Return/Return';
+import OpeningpopUp from './components/OpeningPopUp/OpeningpopUp';
+import PusNotification from './components/PusNotification/PusNotification';
+import NewCard from './components/NewCard/NewCard';
+import NewChackout from './components/NewChackout/NewChackout';
 
 // components
 const TopNotificationBar = lazy(() => import('./components/top_notification_bar/NotificationBar.js'));
@@ -71,15 +82,27 @@ const App = () => {
           } />
           <Route path='/about-us' element={<AboutUs />} />
           <Route path='/panjabis' element={<PanjabiProducts />} />
+          <Route path='/sale' element={<Sale/>} />
           <Route path='/panjabis/:id' element={<SinglePanjabiProduct />} />
+          <Route path='/privacy-policy' element={<PrivetPolicy/>} />
+          <Route path='/shipping-policy' element={<ShoppingPolicy/>} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/intellectual-property' element={<IntellectualProperty />} />
+          <Route path='/loyalty-program' element={<LotaraliProgram></LotaraliProgram>} />
+          <Route path='/exchange-return' element={<Return/>} />
           <Route path='/payment-policy' element={<PaymentPolicy />} />
-          <Route path='/shipping-policy' element={<ShippingPolicy />} />
+          <Route path='/payment-policy' element={<PaymentPolicy />} />
+          <Route path='/size-guide' element={<SizeGide/>} />
           <Route path='/terms-conditions' element={<TermsConditions />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/pusnotification' element={<PusNotification/>} />
           <Route path='/checkout' element={<Checkout />} />
-          <Route path='/my-account' element={<MyAccount />} />
+          <Route path='/opening-pop' element={<OpeningpopUp/>} />
+          <Route path='/opening-pop' element={<OpeningpopUp/>} />
+          <Route path='/newCard' element={<NewCard></NewCard>} />
+          <Route path='/newCheckout' element={<NewChackout></NewChackout>} />
+          <Route path='/myAccount' element={<MyAccountNew/>} />
+
         </Routes>
         <Footer />
       </Fragment>

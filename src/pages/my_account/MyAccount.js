@@ -1,4 +1,5 @@
 import React, { Fragment, lazy, useState } from 'react';
+import { GiSelfLove } from "react-icons/gi";
 import {
     Accordion,
     AccordionHeader,

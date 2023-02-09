@@ -10,11 +10,12 @@ import 'react-modern-drawer/dist/index.css'
 import OtherNav from '../../components/menubar_without_transparent_background/OtherNav.js';
 import "../../assets/css/style.css"
 import { GiSelfLove } from 'react-icons/gi';
+import '../../assets/css/style.css'
 // import HomeNav from '../home_page/HomeNav.js';
 
 
 
-const PanjabiProducts = () => {
+const Sale = () => {
     const [panjabi, setPanjabi] = useState([]);
 
     useEffect(() => {
@@ -41,7 +42,7 @@ const PanjabiProducts = () => {
     return (
         <Fragment>
             {/* <Navbar /> */}
-            <OtherNav/>
+            <OtherNav />
             <MobileMenu />
             {/* <HomeNav></HomeNav> */}
             <div className='grid grid-cols-2'>
@@ -74,24 +75,31 @@ const PanjabiProducts = () => {
                                 <div key={index} className='panjabisProducts'>
                                     <Link to={`/panjabis/${data.id}`}
                                         state={{ id, product_title, category, code, color, images, size, description, details, material, care, stock_status, regular_price, sale_price, galleryImages }}
-                                    >  <div className='panjabisProducts_img-dev '>
-                                        <img
-                                            className=''
-                                            src={data.images[0]}
-                                            onMouseEnter={(e) => e.target.src = data.images[1]}
-                                            onMouseLeave={(e) => e.target.src = data.images[0]}
-                                            alt="" />
+                                    >
+                                        <div className='panjabisProducts_img-dev '>
+                                            <img
+                                                className=''
+                                                src={data.images[0]}
+                                                onMouseEnter={(e) => e.target.src = data.images[1]}
+                                                onMouseLeave={(e) => e.target.src = data.images[0]}
+                                                alt="" />
                                         </div>
                                         <button className='wish_love'>
-                                        <GiSelfLove className='text-2xl text-black bg-white' />
+                                            <GiSelfLove className='text-2xl text-black bg-white' />
                                         </button>
                                         <button className='sale'>
-                                        {/* <GiSelfLove className='text-2xl text-black bg-white' /> */}
-                                        <p>Sale</p>
+                                            {/* <GiSelfLove className='text-2xl text-black bg-white' /> */}
+                                            <p>Sale</p>
                                         </button>
                                         <h1 className='lg:text-left md:text-left text-center font-gilroybold'><a href="/panjabis">{data.product_title}</a></h1>
                                         <p className='text-inherit font-semibold lg:text-left md:text-left text-center'>Product Code: {data.code}</p>
-                                        <p className='lg:text-left md:text-left text-center font-gilroybold'>BDT: {data.regular_price}</p>
+                                        <div className='flex'>
+                                            <p className='lg:text-left md:text-left text-center lg:text-1xl font-gilroybold'>BDT: {data.regular_price}</p>
+                                            <del className='lg:text-left md:text-left text-center lg:text-1xl  ml-5'> BDT : {data.regular_price}</del>
+                                          
+                                            <p className='lg:text-left md:text-left text-center lg:text-1xl text-red-500 ml-5 font-gilroybold'> 62.22 %</p>
+
+                                        </div>
                                     </Link>
                                 </div>
                             )
@@ -102,4 +110,4 @@ const PanjabiProducts = () => {
     );
 };
 
-export default PanjabiProducts;
+export default Sale;

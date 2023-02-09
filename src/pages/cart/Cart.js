@@ -3,9 +3,12 @@ import { useState } from 'react';
 import { lazy } from 'react';
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import OtherNav from '../../components/menubar_without_transparent_background/OtherNav.js';
+import { AiFillDelete } from 'react-icons/ai';
+
 
 // components or pages
-const Navbar = lazy(() => import('../../components/menubar_without_transparent_background/Navbar.js'));
+// const Navbar = lazy(() => import('../../components/menubar_without_transparent_background/Navbar.js'));
 const MobileMenu = lazy(() => import('../../components/mobile_menu/MobileMenu.js'));
 
 const Cart = () => {
@@ -22,13 +25,14 @@ const Cart = () => {
 
     return (
         <Fragment>
-            <Navbar />
+            {/* <Navbar /> */}
+            <OtherNav></OtherNav>
             <MobileMenu />
-            <h2 className='text-center text-[#121D45] text-xl lg:text-3xl mt-20'>Your Cart Items</h2>
+            <h2 className='text-center text-[#121D45] text-xl lg:text-3xl mt-20 font-bold lg:font-extrabold'>Your Cart Items</h2>
             <div className="px-1">
                 <table class="table-auto w-full lg:w-4/6 h-auto text-center mx-auto">
                     <thead>
-                        <tr className='h-[70px] font-gilroy lg:font-gilroybold'>
+                        <tr className='h-[70px] font-gilroy   lg:font-gilroybold'>
                             <th>Image</th>
                             <th>Product Name</th>
                             <th>Unit Price</th>
@@ -38,51 +42,51 @@ const Cart = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className='h-[70px]'>
-                            <td><img src="https://i.ibb.co/ftwVp9H/download-7.webp" className='h-14 mx-auto' alt="primage" /></td>
+                        <tr className='h-[70px] card_tr'>
+                            <td><img src="https://i.ibb.co/ftwVp9H/download-7.webp" className='h-10 lg:h-14 mx-auto' alt="primage" /></td>
                             <td>PREMIUM Panjabi</td>
                             <td>1800</td>
-                            <td>
+                            <td >
                                 <button onClick={decrementCounter} className="px-2">-</button>
-                                <input type="text" className="w-10 lg:w-16 border-2 border-[#121D45] rounded-lg text-center" placeholder={counter} />
+                                <input type="text" className="w-5 lg:w-16 border-2 border-[#121D45] rounded-lg text-center" placeholder={counter} />
                                 <button onClick={incrementCounter} className="px-2">+</button>
                             </td>
                             <td>4900</td>
-                            <td className='font-gilroybold text-red-600'>
+                            <td className='font-gilroybold text-[#121D45] '>
                                
-                                    X
+                                <AiFillDelete className='ml-6 lg:ml-20'></AiFillDelete>
                                
                             </td>
                         </tr>
-                        <tr className='h-[70px]'>
-                            <td><img src="https://i.ibb.co/ftwVp9H/download-7.webp" className='h-14 mx-auto' alt="primage" /></td>
+                        <tr className='h-[70px] card_tr'>
+                            <td><img src="https://i.ibb.co/ftwVp9H/download-7.webp" className='h-10 lg:h-14 mx-auto' alt="primage" /></td>
                             <td>PREMIUM Panjabi</td>
                             <td>1800</td>
                             <td>
                                 <button onClick={decrementCounter} className="px-2">-</button>
-                                <input type="text" className="w-10 lg:w-16 border-2 border-[#121D45] rounded-lg text-center" placeholder={counter} />
+                                <input type="text" className="w-5 lg:w-16 border-2 border-[#121D45] rounded-lg text-center" placeholder={counter} />
                                 <button onClick={incrementCounter} className="px-2">+</button>
                             </td>
                             <td>4900</td>
-                            <td className='font-gilroybold text-red-600'>
+                            <td className='font-gilroybold text-[#121D45]'>
                                 
-                                    X
+                                <AiFillDelete className='ml-6 lg:ml-20'></AiFillDelete>
                               
                             </td>
                         </tr>
-                        <tr className='h-[70px]'>
-                            <td><img src="https://i.ibb.co/ftwVp9H/download-7.webp" className='h-14 mx-auto' alt="primage" /></td>
+                        <tr className='h-[70px] card_tr'>
+                            <td><img src="https://i.ibb.co/ftwVp9H/download-7.webp" className='h-10 lg:h-14 mx-auto' alt="primage" /></td>
                             <td>PREMIUM Panjabi</td>
                             <td>1800</td>
-                            <td>
+                            <td className='flex justify-center'>
                                 <button onClick={decrementCounter} className="px-2">-</button>
-                                <input type="text" className="w-10 lg:w-16 border-2 border-[#121D45] rounded-lg text-center" placeholder={counter} />
+                                <input type="text" className="w-5 lg:w-16 border-2 border-[#121D45] rounded-lg text-center" placeholder={counter} />
                                 <button onClick={incrementCounter} className="px-2">+</button>
                             </td>
                             <td>4900</td>
-                            <td className='font-gilroybold text-red-600'>
+                            <td className='font-gilroybold text-[#121D45]'>
                                 {/* <Link> */}
-                                    X
+                                <AiFillDelete className='ml-6 lg:ml-20'></AiFillDelete>
                                 {/* </Link> */}
                             </td>
                         </tr>

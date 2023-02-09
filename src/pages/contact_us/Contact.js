@@ -2,6 +2,7 @@ import React, { Fragment, lazy } from 'react';
 import { IoMdCall } from 'react-icons/io';
 import { IoMailSharp, IoLocationSharp } from 'react-icons/io5';
 import '../../assets/css/style.css'
+import OtherNav from '../../components/menubar_without_transparent_background/OtherNav';
 
 
 // import pages or components
@@ -12,7 +13,7 @@ const MobileMenu = lazy(() => import('../../components/mobile_menu/MobileMenu.js
 const Contact = () => {
     return (
         <Fragment>
-            <Navbar />
+            <OtherNav></OtherNav>
             <MobileMenu />
             <div className='grid grid-cols-2 gap-4 container mx-auto pt-24 lg:pt-0 px-10 lg:px-56'>
                 <div>

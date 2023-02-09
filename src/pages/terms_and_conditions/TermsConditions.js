@@ -1,5 +1,6 @@
 import React, { Fragment, lazy } from 'react';
 import '../../assets/css/style.css'
+import OtherNav from '../../components/menubar_without_transparent_background/OtherNav';
 
 // import pages or components
 const Sidebar = lazy(() => import('../../components/sidebar/Sidebar.js'));
@@ -10,7 +11,7 @@ const MobileMenu = lazy(() => import('../../components/mobile_menu/MobileMenu.js
 const TermsConditions = () => {
     return (
         <Fragment>
-            <Navbar />
+         <OtherNav></OtherNav>
             <MobileMenu />
             <div className='flex mx-auto container h-full pt-20 lg:pt-0 lg:mt-10'>
                 <div className='w-1/6 pt-5'>
