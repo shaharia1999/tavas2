@@ -94,9 +94,9 @@ const App = () => {
           <Route path='/payment-policy' element={<PaymentPolicy />} />
           <Route path='/size-guide' element={<SizeGide/>} />
           <Route path='/terms-conditions' element={<TermsConditions />} />
-          <Route path='/cart' element={<Cart />} />
+          {/* <Route path='/cart' element={<Cart />} /> */}
           <Route path='/pusnotification' element={<PusNotification/>} />
-          <Route path='/checkout' element={<Checkout />} />
+          {/* <Route path='/checkout' element={<Checkout />} /> */}
           <Route path='/opening-pop' element={<OpeningpopUp/>} />
           <Route path='/opening-pop' element={<OpeningpopUp/>} />
           <Route path='/newCard' element={<NewCard></NewCard>} />

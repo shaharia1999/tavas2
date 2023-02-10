@@ -15,7 +15,7 @@ const Sidebar = () => {
     return (
         <Fragment>
             <div className="w-60 h-auto  pt-5 absolute sidebar-section">
-                <ul className="relative">
+                <ul className="relative  z-50 pr-10">
                     {
                         sidebar.map((data, index) => {
                             return (
@@ -27,6 +27,19 @@ const Sidebar = () => {
                     }
                 </ul>
             </div>
+            {/* <div>
+                <ul className="relative ">
+                    {
+                        sidebar.map((data, index) => {
+                            return (
+                                <li className="relative hover:bg-black" key={index}>
+                                    {data.name}
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </div> */}
         </Fragment>
     );
 };

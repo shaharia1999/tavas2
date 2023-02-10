@@ -2,27 +2,27 @@
     {
         "id": 1,
         "name": "Privacy Policy",
-         "urlLink": "privacy-policy"
+         "urlLink": "/privacy-policy"
     },
     {
         "id": 2,
         "name": "Payment Policy",
-         "urlLink": "payment-policy"
+         "urlLink": "/payment-policy"
     },
     {
         "id": 3,
         "name": "Shipping Policy",
-         "urlLink": "shipping-policy"
+         "urlLink": "/shipping-policy"
     },
     {
         "id": 4,
         "name": "Exchange & Return",
-         "urlLink": "exchange-return"
+         "urlLink": "/exchange-return"
     },
     {
         "id": 5,
         "name": "Size Guide",
-         "urlLink": "size-guide"
+         "urlLink": "/size-guide"
     },
     {
         "id": 6,

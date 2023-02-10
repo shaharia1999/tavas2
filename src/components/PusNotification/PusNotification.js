@@ -4,7 +4,7 @@ import "../../assets/css/style.css"
 
 const PusNotification = () => {
     return (
-        <div className='flex puseNotafication p-2'>
+        <div className='flex puseNotafication p-2 rounded-full drop-shadow-md'>
              <div className='w-16'>
                 <img src={img}></img>
              </div>
