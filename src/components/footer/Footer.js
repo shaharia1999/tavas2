@@ -90,7 +90,7 @@ const Footer = () => {
                             </div>
                             <div className='w-6/12 lg:w-auto py-0 lg:py-0 mx-0 lg:mx-10'>
                                 <div className='footer-context-block'>
-                                    <div className='footer-context-title mb-7'>
+                                    <div className='footer-context-title pl-2 mb-7'>
                                         <p className='font-gilroybold text-white pl-2'>You can pay by</p>
                                     </div>
                                     <div className='footer-list-menu pl-2'>
@@ -124,7 +124,7 @@ const Footer = () => {
                 {/* copyright section */}
                 <div className=''>
                     <ul className='align-center footer-copyright bg-black text-white py-5'>
-                        <li className='flex justify-center font-gilroy'>
+                        <li className='flex justify-center font-gilroy pl-3'>
                             © 2023 TAVAAS. Made with ❤️ by TechAByte Solutions
                         </li>
                     </ul>

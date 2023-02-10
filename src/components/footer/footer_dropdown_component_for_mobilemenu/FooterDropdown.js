@@ -9,8 +9,8 @@ const FooterDropdown = () => {
                     <input type="checkbox"
                     className=' peer absolute top-0 inset-x-0 w-full h-12 opacity-0 cursor-pointer
                     '></input>
-                <div className=' h-12 w-full  flex items-center'>
-                        <h1 className='text-lg font-semibold text-white pl-2'>Company</h1>
+                <div className=' h-12 w-full  flex items-center pl-4'>
+                        <h1 className='text-lg font-semibold text-white '>Company</h1>
                 </div>
                 <div className='
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
@@ -21,7 +21,7 @@ const FooterDropdown = () => {
                 </div>
                 {/* Content */}
                     <div className=' text-[#59737E] transition-all duration-500 max-h-0 peer-checked:max-h-80'>
-                        <div className='py-4 pl-2'>
+                        <div className='py-4 px-3 pl-2'>
                            <ul>
                             <li>About Us</li>
                             <li>Contact Us</li>
@@ -41,7 +41,7 @@ const FooterDropdown = () => {
                     className=' peer absolute top-0 inset-x-0 w-full h-12 opacity-0 cursor-pointer
                     '></input>
                 <div className=' h-12 w-full  flex items-center'>
-                        <h1 className='text-lg font-semibold text-white pl-2'>Information</h1>
+                        <h1 className='text-lg font-semibold text-white pl-4'>Information</h1>
                 </div>
                 <div className='
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
@@ -74,7 +74,7 @@ const FooterDropdown = () => {
                     className=' peer absolute top-0 inset-x-0 w-full h-12 opacity-0 cursor-pointer
                     '></input>
                 <div className=' h-12 w-full  flex items-center'>
-                    <h1 className='text-lg font-semibold text-white pl-2'>Legal</h1>
+                        <h1 className='text-lg font-semibold text-white pl-4'>Legal</h1>
                 </div>
                 <div className='
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
@@ -107,7 +107,7 @@ const FooterDropdown = () => {
                     className=' peer absolute top-0 inset-x-0 w-full h-12 opacity-0 cursor-pointer
                     '></input>
                 <div className=' h-12 w-full  flex items-center'>
-                        <h1 className='text-lg font-semibold text-white pl-2'>Service Center</h1>
+                        <h1 className='text-lg font-semibold text-white pl-4'>Service Center</h1>
                 </div>
                 <div className='
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
