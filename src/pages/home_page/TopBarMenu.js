@@ -27,8 +27,11 @@ const TopBarMenu = () => {
                     </li>
                     <li className='flex justify-between px-1 pt-8 group'>
                         {/* shop-btn */}
-                        <button type="" className='cursor-pointer special'>SHOP </button>
-                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
+                        <div className=''>
+                            <button type="" className='cursor-pointer special'>SHOP </button>
+                            <SlArrowDown className='text-white text-[20px] ml-1  font-semibold '></SlArrowDown>
+                        </div>
+
                         <div className='hidden group-hover:flex flex-col absolute left-[-133px] top-24 p-10 w-screen bg-white text-black duration-300 mt-6 font-gilroy'>
                             <div className='grid grid-cols-4 gap-5'>
                                 <div className='flex flex-col border-r-2 border-black'>
