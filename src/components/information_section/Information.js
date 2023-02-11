@@ -84,7 +84,7 @@ const Information = () => {
                     {
                         othersCategory.map((othersSingleCategory, index) => (
                             <SwiperSlide key={index} className="h-fit">
-                                <div className='relative text-center  m-0 category-slider-section other_cateagory'>
+                                <div className='relative text-center  m-0 category-slider-section other_cateagory cursor-pointer'>
                                     <img
                                         src={othersSingleCategory.img_link} className="object-cover" alt="" />
                                     <div className='absolute top-2/4 left-2/4 -translate-y-1/2 -translate-x-1/2 text-white font-bold text-4xl uppercase '>

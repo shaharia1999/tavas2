@@ -47,7 +47,7 @@ const Home = () => {
           ))
         }
       </Swiper>
-        <div className='absolute bottom-16  bannerTitle '>
+        <div className='absolute bottom-28 bannerTitle '>
           <h1 className='bannerTitle'>TREDITIONAL <br /> ATTRIDE</h1>
           <button className=''>SHOP NOW</button>
 

@@ -486,7 +486,7 @@ background-color: red;
  height: 300px;
  width: 100%;
  position: relative;
- margin-top: 50px;
+ margin-top: 40px;
  padding-right: 40px;
 
 }
@@ -555,7 +555,7 @@ background-color: red;
  
 }
 .serch_div{
-  height:280px ;
+  height:200px ;
       display: flex;
         align-items: center;
         justify-content: center;
@@ -575,6 +575,14 @@ background-color: red;
   outline: none;
 
 
+}
+.serch_div input::placeholder{
+  font-family: 'glory';
+  font-size: 20px;
+}
+.search_img{
+  height: 200px !important;
+  width: 200px !important;
 }
 .sarchIcon{
   position: absolute;
@@ -602,11 +610,16 @@ background-color: red;
       /* background-color: red; */
   
     }
+        .serch_div input::placeholder {
+          font-family: 'glory';
+          font-size: 14px;
+        }
         .serch_div {
-          height: 250px;
+          height: 150px;
           display: flex;
           align-items: center;
           justify-content: center;
+         
     
         }
     
@@ -649,7 +662,10 @@ background-color: red;
   margin: 0;
   padding: 0;
 } */
-
+/* .cetagory_title{
+   font-family: sans-serif;
+  font-weight: 800;
+} */
 /* ==================== 9. MobileMenu End ==================== */
 
 /* ==================== 10. Sidebar Start ==================== */

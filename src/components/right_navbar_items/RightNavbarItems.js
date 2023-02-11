@@ -44,7 +44,7 @@ const RightNavbarItems = (props) => {
                     {/* cart button */}
                     <button
                         type="button"
-                        className='shopping-cart-btn float-right text-left w-30    cursor-pointer -translate-x-1/2 flex items-center  '
+                        className='shopping-cart-btn float-right text-left w-30 mt-[5px]   cursor-pointer -translate-x-1/2 flex items-center  '
                         onClick={toggleDrawer}
                     >
                         <IoBagOutline className='text-2xl right-nav' />
@@ -64,7 +64,7 @@ const RightNavbarItems = (props) => {
                     {/* <a href="/signin"> */}
                         <button
                             type="button"
-                            className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
+                        className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center mt-[10px]  z-50"'>
                             <AiOutlineUser className='text-2xl right-nav' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
                         <label for="my-modal-3" className='ml-1 special'>SIGN IN</label>
@@ -74,7 +74,7 @@ const RightNavbarItems = (props) => {
                     
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent mt-[10px]  cursor-pointer -translate-x-1/2 flex items-center'
                         onClick={() => {
                             setSer((prevState) => !prevState)
                         }}
@@ -84,7 +84,7 @@ const RightNavbarItems = (props) => {
                     </button>
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left w-30 mt-[10px]  ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
                         onClick={toggleSearch}
                     >
                         <GiSelfLove className='text-2xl right-nav' />

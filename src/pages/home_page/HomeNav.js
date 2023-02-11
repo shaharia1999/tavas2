@@ -1,4 +1,5 @@
-import React, { Fragment, lazy, useState } from 'react';
+import React, { Fragment, lazy, useEffect, useState } from 'react';
+import axios from 'axios';
 import '../../assets/css/style.css';
 import siteLogoWhite from '../../assets/images/logo/T white.png';
 import siteLogoWhiteMobile from '../../assets/images/logo/T white mobile.png';
@@ -12,8 +13,15 @@ import Megamenu1 from '../../assets/megamenu_images/megamenu1.webp'
 import Megamenu2 from '../../assets/megamenu_images/megamenu2.webp'
 import { GiSelfLove } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
-import FilterItem from '../../components/search_drawer/FilterItem';
 import { ImGoogle } from 'react-icons/im';
+import { Swiper, SwiperSlide } from "swiper/react";
+import '../../components/new_arrival/newAribe.css'
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import { Scrollbar } from "swiper"
 
 
 // components or pages
@@ -32,6 +40,14 @@ const HomeNav = (props) => {
     const toggleSearchs = () => {
         setSer((prevState) => !prevState)
     }
+    // serch box
+        const [arrival, setArrival] = useState([]);
+    useEffect(() => {
+        axios
+            .get("/data/NewArrival.json")
+            .then((res) => setArrival(res.data))
+            .catch((err) => console.log(err))
+    }, [])
     return (
         <Fragment>
             <div>
@@ -178,21 +194,69 @@ const HomeNav = (props) => {
             <div className={ser ? 'serch_box' : 'serch_box_show'}>
                 <div>
                     {/* <loClose className="text-5xl text-black"></loClose> */}
-                    <IoCloseOutline className='text-5xl text-black closehIcon'
+                    <IoCloseOutline className='lg:text-5xl text-2xl text-black closehIcon'
                     onClick={toggleSearchs}
                     />
 
                 </div>
 
                 <div className="serch_div" >
-                    <div className='serch_div1'>
-                        <input className=' text-3xl' placeholder='   Search...'>
+                    <div className='serch_div1 '>
+                        <input className=' text-3xl' placeholder='Search for any category or products'>
                         </input>
-                        <IoSearchOutline className='text-4xl text-black sarchIcon' />
+                        <IoSearchOutline className='lg:text-4xl text-2xl text-black sarchIcon' />
 
                     </div>
                 </div>
-                <FilterItem></FilterItem>
+                <div className='lg:h-[60vh] lg:pb-10 pb-0  '>
+                
+                    <div className=' z-50 px-20 '>
+                        <Swiper
+                            slidesPerView={1.3}
+                            spaceBetween={2}
+                            slidesPerGroup={1}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            scrollbar={true}
+                            className="mySwiper"
+                            modules={[Scrollbar]}
+                            id='new-arrival'
+                            breakpoints={{
+                                600: {
+                                    slidesPerView: 2.5,
+                                    slidesPerGroup: 2,
+                                    spaceBetween: 0,
+                                },
+                                768: {
+                                    slidesPerView: 3.5,
+                                    slidesPerGroup: 3,
+                                    spaceBetween: 2,
+                                },
+                                992: {
+                                    slidesPerView: 3,
+                                    slidesPerGroup: 2,
+                                    spaceBetween: 2,
+                                },
+                            }}
+                        >
+                            {
+                                arrival.map((singleArrival, index) => (
+                                    <SwiperSlide>
+                                        <div key={index} className="">
+                                            <div className='flex justify-center justify-items-center'>
+                                            <img src={singleArrival.img_link} className="search_img" alt="" />
+                                            </div>
+                                            <p className='text-left text-md h-14 font-sanf'>{singleArrival.title}</p>
+                                            <p className='text-left font-gilroybold text-[#121D45] mt-5  lg:pb-5'>BDT. {singleArrival.price}</p>
+                                        </div>
+                                    </SwiperSlide>
+                                ))
+                            }
+                        </Swiper>
+                    </div>
+                </div>
+                {/* Earch End */}
             </div>
             <section className='pt-2 MOBILE-MENU flex lg:hidden bg-transparent z-10 absolute w-full'>
                 <div className='HAMBURGER-ICON space-y-2 cursor-pointer px-3'
