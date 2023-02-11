@@ -20,15 +20,15 @@ const TopBarMenu = () => {
                         </a>
                     </li> */}
                     <li className='flex justify-between px-1  pt-8 '>
-                        <a href="/panjabis">
+                        <a href="/panjabis" className='bg-transparent'>
                             <button type="" className='cursor-pointer special '>CLOTH &</button>
                         </a>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                     </li>
                     <li className='flex justify-between px-1 pt-8 group'>
                         {/* shop-btn */}
-                        <div className=''>
-                            <button type="" className='cursor-pointer special'>SHOP </button>
+                        <div className='bg-transparent'>
+                            <button type="" className='cursor-pointer special '>SHOP </button>
                             <SlArrowDown className='text-white text-[20px] ml-1  font-semibold '></SlArrowDown>
                         </div>
 

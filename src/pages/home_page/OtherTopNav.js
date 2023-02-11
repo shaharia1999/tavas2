@@ -11,18 +11,8 @@ const OtherTopNav = () => {
 
             <div className='top-bar-menu w-full  bg-transparent overflow-y-hidden z-10 block relative mt-0 ml-2 ' id="navbar-solid-bg">
                 <ul className='menu justify-center h-auto flex-wrap flex-row p-0 m-0 relative list-none flex'>
-                    {/* <li className='flex justify-center px-5 font-bold mt-8'>
-                        <a href="/">
-                            <button type="" className='cursor-pointer font-gilroy'>Winter Collection</button>
-                        </a>
-                    </li> */}
-                    {/* <li className='flex justify-center px-5 font-bold pt-8'>
-                        <a href="/all-new-panjabis">
-                            <button type="" className='cursor-pointer font-gilroy'>New Arrivals</button>
-                        </a>
-                    </li> */}
                     <li className='flex justify-between px-2  pt-8 '>
-                        <a href="/panjabis">
+                        <a href="/panjabis" className='bg-transparent'>
                             <button type="" className='cursor-pointer  special_otehr_nav'>CLOTH &</button>
                         </a>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
