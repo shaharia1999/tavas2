@@ -492,10 +492,9 @@ background-color: red;
 }
 .right-ber-menu2_other{
   z-index: 10;
-    height: 300px;
     width: 100%;
     position: relative;
-    margin-top: 60px;
+    margin-top: 48px;
     padding-right: 40px;
     left: 0%;
    
@@ -527,7 +526,7 @@ background-color: red;
   margin:0;
   padding: 0;
   width: 400px;
-  height: auto !important;
+  height: a !important;
 
 }
 .MODAL-popUP-input{

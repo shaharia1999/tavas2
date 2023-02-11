@@ -38,13 +38,13 @@ const OtherRight = (props) => {
     return (
         <Fragment>
 
-            <div className='top-bar-container '>
+            <div className='top-bar-container  '>
                 {/* site logo */}
                 <div className='  right-ber-menu2_other z-10 relative '>
                     {/* cart button */}
                     <button
                         type="button"
-                        className='shopping-cart-btn float-right text-left w-30 cursor-pointer -translate-x-1/2 flex items-center  '
+                        className='shopping-cart-btn float-right text-left pt-1 w-30 cursor-pointer -translate-x-1/2 flex items-center  '
                         onClick={toggleDrawer}
                     >
                         <IoBagOutline className='text-2xl right-nav-Other' />
@@ -64,7 +64,7 @@ const OtherRight = (props) => {
                     {/* <a href="/signin"> */}
                     <button
                         type="button"
-                        className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
+                        className='user-menu-btn float-right text-left w-30 ml-6 top-[10px] relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
                         <AiOutlineUser className='text-2xl right-nav-Other' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
                         <label for="my-modal-3" className='ml-1 special_otehr_nav'>SIGN IN</label>
@@ -74,7 +74,7 @@ const OtherRight = (props) => {
 
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left w-30 ml-6 top-[10px] relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
                         onClick={() => {
                             setSer((prevState) => !prevState)
                         }}
@@ -84,7 +84,7 @@ const OtherRight = (props) => {
                     </button>
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left top-[10px] w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
                         onClick={toggleSearch}
                     >
                         <GiSelfLove className='text-2xl right-nav-Other' />
