@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { BiArrowToBottom, BiDownArrow } from "react-icons/bi";
+import { SlArrowDown } from 'react-icons/sl';
 
 const FooterDropdown = () => {
     return (
@@ -16,7 +17,7 @@ const FooterDropdown = () => {
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
                  '>
                     {/* aroow */}
-                        <BiDownArrow className='text-white'></BiDownArrow>
+                        <SlArrowDown className='text-white'></SlArrowDown>
                       
                 </div>
                 {/* Content */}
@@ -47,7 +48,7 @@ const FooterDropdown = () => {
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
                  '>
                     {/* aroow */}
-                        <BiDownArrow className='text-white'></BiDownArrow>
+                        <SlArrowDown className='text-white'></SlArrowDown>
                       
                 </div>
                 {/* Content */}
@@ -80,7 +81,7 @@ const FooterDropdown = () => {
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
                  '>
                     {/* aroow */}
-                        <BiDownArrow className='text-white'></BiDownArrow>
+                        <SlArrowDown className='text-white'></SlArrowDown>
                       
                 </div>
                 {/* Content */}
@@ -113,7 +114,7 @@ const FooterDropdown = () => {
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
                  '>
                     {/* aroow */}
-                        <BiDownArrow className='text-white'></BiDownArrow>
+                        <SlArrowDown className='text-white'></SlArrowDown>
                       
                 </div>
                 {/* Content */}

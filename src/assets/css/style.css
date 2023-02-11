@@ -524,14 +524,31 @@ background-color: red;
   background-color: #74746ed3;
   font-family:'glory';
   z-index: 10000;
+  margin:0;
+  padding: 0;
+  width: 400px;
+  height: auto !important;
 
 }
-.MODAL-popUP button{
-  background-color: #020923;
-  z-index: 20;
+.MODAL-popUP-input{
+width: 100%;
+background-color: red;
+
+}
+.MODAL-popUP-input input{
+  width: 100%;
+  outline: none;
+  color: black;
+  
+}
+.MODAL-popUP_footer{
+  background-color:rgba(0, 0, 0, 0.813);
+}
+.MODAL-popUP_footer span{
+  color: #C76A2e;
 }
 .MODAL-popUP p{
-  background-color: #020923;
+  /* background-color: #020923; */
   color: white;
   z-index: 20;
 }

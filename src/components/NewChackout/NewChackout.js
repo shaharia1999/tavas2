@@ -13,7 +13,7 @@ const NewChackout = () => {
             <div className='lg:flex'>
                 <div className='lg:w-[60%]  m-5'>
                  <div className='flex w-[100%] bg-[#121d45] text-white py-3'>
-                        <h3 className='text-black ml-10 bg-white w-10 text-center rounded-full'>1</h3>
+               
                     <h3 className='text-white ml-10'>SHIPPING ADDRESS</h3>
                  </div>
                     <div className="container border mx-auto">
@@ -97,7 +97,7 @@ const NewChackout = () => {
                     {/* Shepping method */}
                     <div className='border pb-10'>
                     <div className='flex w-[100%] bg-[#121d45] text-white py-3 mt-10'>
-                        <h3 className='text-black ml-10 bg-white w-10 text-center rounded-full'>2</h3>
+                     
                         <h3 className='text-white ml-10'>SHIPPING ADDRESS</h3>
 
                     </div>
@@ -114,7 +114,7 @@ const NewChackout = () => {
                     {/* Payment method */}
                     <div className='border'>
                     <div className='flex w-[100%] bg-[#121d45] text-white py-3 mt-10'>
-                        <h3 className='text-black ml-10 bg-white w-10 text-center rounded-full'>3</h3>
+                       
                             <h3 className='text-white ml-10'>PAYMENT METHOD</h3>
 
                     </div>
@@ -130,14 +130,14 @@ const NewChackout = () => {
                                 <label className="flex items-center text-sm group text-heading">
                                     <input type="checkbox"
                                         className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
-                                    <span className='ml-2'><BsMinecart className='ml-2 text-2xl'></BsMinecart></span>
+                                    <span className='ml-2'><BsMinecart className='ml-2 text-2xl w-10'></BsMinecart></span>
                                     <span className="ml-2 font-bold ">International debit/credit cards</span></label>
                             </div>
                             <div className="flex items-center mt-4">
                                 <label className="flex items-center text-sm group text-heading">
                                     <input type="checkbox"
                                         className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
-                                    <span className='ml-2'><MdLocalShipping className='ml-2 text-2xl'></MdLocalShipping></span>
+                                    <span className='ml-2'><MdLocalShipping className='ml-2 text-2xl w-10'></MdLocalShipping></span>
                                     <span className="ml-2 font-bold ">Cash on delivery</span></label>
                             </div>
                             
@@ -152,7 +152,7 @@ const NewChackout = () => {
                 <div className=' lg:w-[40%] m-5 '>
                     <div className='lg:w-[100%]  '>
                         <div className='flex w-[100%] bg-[#121d45] text-white py-3'>
-                            <h3 className='text-black ml-10 bg-white w-10 text-center rounded-full'>#</h3>
+                        
                             <h3 className='text-white ml-10'>ORDER REVIEW</h3>
                         </div>
                     </div>

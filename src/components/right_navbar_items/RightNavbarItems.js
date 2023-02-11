@@ -67,7 +67,7 @@ const RightNavbarItems = (props) => {
                         className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center mt-[10px]  z-50"'>
                             <AiOutlineUser className='text-2xl right-nav' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
-                        <label for="my-modal-3" className='ml-1 special'>SIGN IN</label>
+                        <label for="my-modal" className='ml-1 special'>SIGN IN</label>
                         </button>
                     {/* </a> */}
                     {/* pop Up */}

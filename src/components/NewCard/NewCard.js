@@ -1,13 +1,13 @@
 import React from 'react';
 import img from "../../assets/images/header_background_images/headerbg.png"
-import { BiDownArrow } from 'react-icons/bi';
+import { SlArrowDown } from 'react-icons/sl';
 
 const NewCard = () => {
     return (
 
 
         <div>
-            <h1 className='text-center text-2xl font-semibold pt-5'>My Bags items (0)</h1>
+            <h1 className='text-center text-2xl font-semibold pt-5'>My Cart items (0)</h1>
         <div class="grid grid-flow-row-dense grid-cols-3 ... p-10">
                   
       
@@ -20,7 +20,7 @@ const NewCard = () => {
                     <div class="col-span-2 ">
                        <img src={img} className='h-[100%]'></img>
                     </div>
-                    <div class="col-span-4 font-gilroy ">
+                    <div class="col-span-4 font-gilroy pl-5 ">
                             <p className='lg:p-3 px-2'>
                             Fuchsia Printed Jacquard Viscose Shalwar Kameez</p>
                         <p className='lg:p-3 px-2'>In stock</p>
@@ -62,7 +62,7 @@ const NewCard = () => {
                 absolute top-3 right-3 tex-white transition-transform duration-500 rotate-0 peer-checked:rotate-180
                  '>
                             {/* aroow */}
-                            <BiDownArrow className='text-black'></BiDownArrow>
+                                <SlArrowDown className='text-black'></SlArrowDown>
 
                         </div>
                         {/* Content */}

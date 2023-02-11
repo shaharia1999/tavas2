@@ -22,6 +22,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Scrollbar } from "swiper"
+import { SlArrowLeft } from 'react-icons/sl';
 
 
 // components or pages
@@ -52,148 +53,63 @@ const HomeNav = (props) => {
         <Fragment>
             <div>
                 {/* modal 1 */}
-                {/* ============================== modal 1 =================================================*/}
+                {/* ============================== Login Cuntinue =================================================*/}
                 <input type="checkbox" id="my-modal" class="modal-toggle" />
-                <div class="modal">
+                <div class="modal ">
                     <div class="modal-box MODAL-popUP">
-                        <h3 class="font-bold  text-center text-white py-5 text-2xl ">Log in</h3>
-                        <div className='flex justify-center'>
-                            <input type="text" placeholder="Number" class="input input-bordered w-full max-w-xs justify-center" />
+                        <p className='text-center pt-10'>1/2</p>
+                        <h3 class="font-bold  text-center text-white py-5 text-2xl font-gilroy ">Login</h3>
+                        <div className=' mx-9'>
+                        <div className='MODAL-popUP-input'>
+                            <input type="text" placeholder=" Enter Number" class="py-2 px-2" />
                         </div>
-                        <div class='flex justify-center pt-10  '>
-                            {/* <button className='btn block text-center px-24'>cuntinue</button> */}
-                            <label for="my-modal-6 " className='btn block text-center px-24 pt-4 space-x-2 text-1xl'>cuntinue</label>
+                            <p className='text-right pt-1 cursor-pointer'>Forget Password ?</p>
+
+                        <div className='MODAL-popUP-input mt-6'>
+                                <label for="my-modal-6 " className='uppercase text-white block text-center bg-[#121D45] py-2 space-x-2 text-1xl'>cuntinue</label>
                         </div>
 
                         <div className='flex mt-10 relative'>
-                            <hr className='bg-red-500 w-48 mt-4'></hr>
-                            <p className='w-20 justify-center text-center  absolute lg:ml-48 ml-36 mb-20 text-2xl'>or</p>
-                            <hr className='bg-red-500 w-64 mt-4'></hr>
+                            <hr className=' w-[50%] bg-white '></hr>
+                                <p className=' z-50  text-2xl absolute left-[45%] bg-[#74746ed3] bottom-[-13px] px-4'>or</p>
+                                <hr className=' w-[50%] bg-white '></hr>
                         </div>
                         <div class="modal-action ">
                             <label for="my-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                         </div>
-                        {/* <div class="modal-action ">
-                            <label for="my-modal-6" class="btn btn-sm btn-circle absolute left-2 top-2">OTP</label>
-                        </div> */}
-                        <div className='flex justify-center mt-3'>
+                        <div className='flex justify-between mt-3'>
 
 
-                            <div className='text-white bg-gray-800 py-3 px-6 mr-4 cursor-pointer flex text-center'>
-                                {/* <FiFacebook className='text-white'></FiFacebook>  */}
-                                <AiFillFacebook className='text-3xl text-white mr-2 '></AiFillFacebook>
-                                <h6 className='text-2xl'> Facebook</h6>
+                            <div className='text-white  py-1 px-2 cursor-pointer flex  justify-center justify-items-center text-center border w-36'>
+                               
+                                    <AiFillFacebook className='text-1xl text-[#121D45]  mt-1 mr-3'></AiFillFacebook>
+                                    <h6 className='text-1xl  font-semibold'> Facebook</h6>
                             </div>
-                            <div className='text-white bg-gray-800 py-3 px-6 mr-4 cursor-pointer flex text-center'>
-                                {/* <FiFacebook className='text-white'></FiFacebook>  */}
-                                <ImGoogle className='text-3xl text-white mr-2 '></ImGoogle>
-                                <h6 className='text-2xl'> Google</h6>
+                                <div className='text-white py-1 px-2 justify-center justify-items-center   cursor-pointer flex text-center w-36 border'>
+                        
+                                    <ImGoogle className='text-1xl text-[#121D45] mt-1 mr-3 '></ImGoogle>
+                                <h6 className='text-1xl text-center font-semibold'> Google</h6>
                             </div>
 
                         </div>
-                        <div className='   flex justify-center mt-4'>
-                            <h6 className='text-white text-2xl'>Not registered ?
-                                <span className='text-white  text-2xl cursor-pointer hover:text-[#020923]'> Sign Up Now</span>
-                            </h6>
+                        </div>
+                        <div className=' flex justify-center mt-10 MODAL-popUP_footer'>
+                            <p className='text-white text-1xl py-2'>Not registered ?
+                                <span className='text-white  text-1xl cursor-pointer '> Sign Up Now</span>
+                            </p>
                            
                         </div>
                     </div>
                 </div>
-                {/*======================= modal 2 ==============================================================*/}
+             
 
-                <input type="checkbox" id="my-modal-6" class="modal-toggle" />
-                <div class="modal modal-bottom sm:modal-middle">
-                    <div class="modal-box MODAL-popUP">
-                        <h3 class="font-bold  text-center text-white py-5 text-2xl ">Log in</h3>
-                        <h6 class="font-bold  text-center py-5 text-1xl text-white ">Please enter the One Time Password (OTP)
-                            sent via Email and SMS to 01707018322</h6>
-                        <div className='flex justify-center'>
-                            <input type="text" placeholder="Otp" class="input input-bordered w-full max-w-xs justify-center" />
-                        </div>
-                        <div class='flex justify-center pt-3  '>
-                            {/* <button className='btn block text-center px-24'>cuntinue</button> */}
-                            <h6 className='text-white'>Didn’t receive the OTP?<span className='text-white cursor-pointer hover:text-[#020923]'> RESEND</span> </h6>
-                        </div>
-                        <div class='flex justify-center pt-3 '>
-                            <button className='btn block text-center px-24'>Log in</button>
-                        </div>
+              
+             
+               
 
-                        
-
-                            <h6 className=' font-bold  text-center py-5 text-1xl text-white'>For customers outside Bangladesh, please check email for OTP</h6>
-
-                    
-                        <div class="modal-action ">
-                            <label for="my-modal-6" class="btn btn-sm btn-circle absolute right-2 top-5">✕</label>
-                        </div>
-
-                    </div>
-                </div>
-                {/*    ==================== model 2  End======================================================== */}
-                {/*    ==================== model 3  start ======================================================== */}
-                {/* <label for="my-modal-3" class="btn">open modal</label> */}
-                <input type="checkbox" id="my-modal-3" class="modal-toggle" />
-                <div class="modal">
-                    <div class="modal-box relative MODAL-popUP">
-                        <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
-                        <h3 class="font-bold  text-center text-white py-5 text-2xl ">Create An Account</h3>
-                        <div className='flex justify-center mb-4'>
-                            <input type="text" placeholder=" FirstName" class="input input-bordered w-full max-w-xs justify-center" />
-                        </div>
-                        <div className='flex justify-center mb-4'>
-                            <input type="text" placeholder="LastName" class="input input-bordered w-full max-w-xs justify-center" />
-                        </div>
-                        <div className='flex justify-center mb-4'>
-                            <input type="text" placeholder="number" class="input input-bordered w-full max-w-xs justify-center text-black" />
-                        </div>
-                        {/* <div className='flex justify-center mb-4'>
-                            <select class="select w-full max-w-xs">
-                                <option disabled selected>Gender</option>
-                                <option>Male</option>
-                                <option>FeMale</option>
-
-                            </select>
-                        </div> */}
-                        <div class='flex justify-center pt-2  '>
-                            {/* <button className='btn block text-center px-24'>cuntinue</button> */}
-                            <label for="my-modal-6 " className='btn block text-center px-24 pt-4 space-x-2 text-1xl'>Sing Up</label>
-                        </div>
-                        <div className='flex mt-5 relative'>
-                            <hr className='bg-red-500 w-48 mt-4'></hr>
-                            <p className='w-20 justify-center text-center  absolute lg:ml-48 ml-36 selection:text-2xl'>or</p>
-                            <hr className='bg-red-500 w-64 mt-4'></hr>
-                        </div>
-                        <div className='flex justify-center mt-4'>
-
-
-                            <div className='text-white bg-gray-800 py-3 px-6 mr-4 cursor-pointer flex text-center'>
-                                {/* <FiFacebook className='text-white'></FiFacebook>  */}
-                                <AiFillFacebook className='text-3xl text-white mr-2 '></AiFillFacebook>
-                                <h6 className='text-2xl'> Facebook</h6>
-                            </div>
-                            <div className='text-white bg-gray-800 py-3 px-6 mr-4 cursor-pointer flex text-center'>
-                                {/* <FiFacebook className='text-white'></FiFacebook>  */}
-                                <ImGoogle className='text-3xl text-white mr-2 '></ImGoogle>
-                                <h6 className='text-2xl'> Google</h6>
-                            </div>
-
-                        </div>
-                        <div className='   flex justify-center mt-4'>
-                            <h6 className='text-white text-2xl'>All Ready have an Account ?
-                                <span className='text-white  text-2xl cursor-pointer hover:text-[#020923]'>  Log in</span>
-                            </h6>
-
-                        </div>
-
-
-
-                    </div>
-                </div>
-                {/*    ==================== model 3  end ======================================================== */}
             </div>
             <div className={ser ? 'serch_box' : 'serch_box_show'}>
                 <div>
-                    {/* <loClose className="text-5xl text-black"></loClose> */}
                     <IoCloseOutline className='lg:text-5xl text-2xl text-black closehIcon'
                     onClick={toggleSearchs}
                     />
@@ -273,63 +189,6 @@ const HomeNav = (props) => {
                 </div>
                 
                 <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
-                    {/* <div
-                        className="absolute top-0 right-0 mx-8 my-8 cursor-pointer border-2 rounded-lg"
-                        onClick={() => setIsNavOpen(false)}
-                    >
-                        <svg
-                            className="h-8 w-8 text-gray-600"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                        </svg>
-                    </div> */}
-                    {/* <div className='menu-nav-open'>
-                        <div className='grid grid-cols-3 gap-2 '>
-                            <div className='group pt-2'>
-                                <p href="/" type="" className='cursor-pointer font-gilroy'>Shop &darr;</p>
-                                <div className='hidden group-hover:flex flex-col absolute left-0 p-10 w-screen bg-white text-black duration-300 mt-0 lg:mt-6 font-gilroy'>
-                                    <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
-                                        <div className='flex flex-col border-b-2 lg:border-r-2 border-black'>
-                                            <h3 className='mb-2 lg:mb-4 text-lg lg:text-xl md:text-xl text-gray-600 font-gilroybold'>Categories</h3>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">New Arrival</a>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">Panjabi</a>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">New Arrival</a>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">New Arrival</a>
-                                        </div>
-                                        <div className='flex flex-col border-b-2 lg:border-r-2 border-black'>
-                                            <h3 className='mb-2 lg:mb-4 text-lg lg:text-xl md:text-xl text-gray-600 font-gilroybold'>Size Guides</h3>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">Panjabis</a>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">Shirts</a>
-                                            <a href="/" class="hover:underline hover:text-red-600 text-sm lg:text-xl md:text-xl">Pants</a>
-                                        </div>
-                                        <div className='flex flex-col border-r-0 lg:border-r-2 border-black'>
-                                            <img src={Megamenu1} className="h-96 w-96" alt="" />
-                                        </div>
-                                        <div className='flex flex-col'>
-                                            <img src={Megamenu2} className="h-96 w-96" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='px-4'>
-                                <a href="/all-new-panjabis">
-                                    <button type="" className='cursor-pointer font-gilroy'>New Arrivals</button>
-                                </a>
-                            </div>
-                            <div className='px-4'>
-                                <a href="/panjabis">
-                                    <button type="" className='cursor-pointer font-gilroy'>Clothing</button>
-                                </a>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className='Parants_mobile'>
                         <div className='grid grid-cols-3 mobile-nav-mega'>
                             <div className='group pt-2'>
@@ -419,10 +278,6 @@ const HomeNav = (props) => {
                         className='user-menu-btn cursor-pointer pr-3'>
                         <AiOutlineUser className='home_serch text-white' />
                         </label>
-                    
-                    {/* </Link> */}
-                    {/* <label for="my-modal-6" class="btn">open modal</label> */}
-                    {/* cart page */}
                     <Link to="/cart">
                         <button
                             type="button"
