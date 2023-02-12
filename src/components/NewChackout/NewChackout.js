@@ -8,13 +8,13 @@ import { BsMinecart } from 'react-icons/bs';
 const NewChackout = () => {
     return (
         <div className='py-5 px-10 font-gilroy'>
-           <h1 className='text-3xl font-semibold space-x-1 pl-5'>CHECKOUT</h1>
+            <h1 className='text-3xl font-semibold space-x-1 pl-5 cetagory_title'>CHECKOUT</h1>
             <p className='pl-5'>Please fill in the fields below and place order to complete your purchase!</p>
             <div className='lg:flex'>
                 <div className='lg:w-[60%]  m-5'>
                  <div className='flex w-[100%] bg-[#121d45] text-white py-3'>
                
-                    <h3 className='text-white ml-10'>SHIPPING ADDRESS</h3>
+                        <h3 className='text-white ml-10 cetagory_title1'>SHIPPING ADDRESS</h3>
                  </div>
                     <div className="container border mx-auto">
                         <div className="flex flex-col w-full px-0 mx-auto md:flex-row">
@@ -98,7 +98,7 @@ const NewChackout = () => {
                     <div className='border pb-10'>
                     <div className='flex w-[100%] bg-[#121d45] text-white py-3 mt-10'>
                      
-                        <h3 className='text-white ml-10'>SHIPPING ADDRESS</h3>
+                            <h3 className='text-white ml-10 cetagory_title1'>SHIPPING ADDRESS</h3>
 
                     </div>
                     <div className='flex justify-between'>
@@ -115,7 +115,7 @@ const NewChackout = () => {
                     <div className='border'>
                     <div className='flex w-[100%] bg-[#121d45] text-white py-3 mt-10'>
                        
-                            <h3 className='text-white ml-10'>PAYMENT METHOD</h3>
+                            <h3 className='text-white ml-10 cetagory_title1'>PAYMENT METHOD</h3>
 
                     </div>
                     <div className=''>
@@ -153,7 +153,7 @@ const NewChackout = () => {
                     <div className='lg:w-[100%]  '>
                         <div className='flex w-[100%] bg-[#121d45] text-white py-3'>
                         
-                            <h3 className='text-white ml-10'>ORDER REVIEW</h3>
+                            <h3 className='text-white ml-10 cetagory_title1'>ORDER REVIEW</h3>
                         </div>
                     </div>
                     <div className='flex justify-between py-1 px-2 border-b-2 text-[16px]'>

@@ -7,7 +7,7 @@ const NewCard = () => {
 
 
         <div>
-            <h1 className='text-center text-2xl font-semibold pt-5'>My Cart items (0)</h1>
+            <h1 className='text-center text-2xl font-semibold pt-5 cetagory_title'>My Cart items (0)</h1>
         <div class="grid grid-flow-row-dense grid-cols-3 ... p-10">
                   
       

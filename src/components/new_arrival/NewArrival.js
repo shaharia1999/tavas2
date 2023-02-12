@@ -24,11 +24,11 @@ const NewArrival = () => {
             <div className='new-arrival-section arribe h-screen lg:h-[100vh] cetagory_mobile2 pb-20'>
                 <div className='grid grid-cols-2 mt-0 lg:mt-10 new-arrival-heading-section lg:mx-2'>
                     <div>
-                        <p className=' sm:text-md lg:text-4xl text-[#121D45] pl-8 cetagory_title font-gilroybold font-bold'>New Arrival</p>
+                        <p className=' sm:text-md lg:text-4xl text-[#121D45] pl-8 cetagory_title  font-bold'>New Arrival</p>
                     </div>
                     <div>
-                        <p className=' text-right sm:text-md lg:text-2xl text-[#121D45] pr-5 pb-2 font-a font-gilroybold '>
-                            <Link to="/" className=' border-b-2 border-[#121D45]'>
+                        <p className=' text-right sm:text-md lg:text-2xl text-[#121D45] pr-5 pb-2  font '>
+                            <Link to="/" className=' border-b-2 border-[#121D45] cetagory_title '>
                                 Shop Now 
                                 {/* <span className='inline-block'><RxDoubleArrowRight /></span> */}
                             </Link>

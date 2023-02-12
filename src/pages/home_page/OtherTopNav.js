@@ -19,7 +19,10 @@ const OtherTopNav = () => {
                     </li>
                     <li className='flex justify-between px-2  pt-8 group'>
                         {/* shop-btn */}
-                        <button type="" className='cursor-pointer special_otehr_nav'>SHOP </button>
+                        <div className='bg-transparent'>
+                            <button type="" className='cursor-pointer special_otehr_nav'>SHOP </button>
+                            <SlArrowDown className='text-black text-[20px] ml-1  font-semibold '></SlArrowDown>
+                        </div>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                         <div className='hidden group-hover:flex flex-col absolute left-[-145px] top-20 p-10 w-screen bg-white text-black duration-300 mt-6 font-gilroy'>
                             <div className='grid grid-cols-4 gap-5 special_otehr_nav'>
