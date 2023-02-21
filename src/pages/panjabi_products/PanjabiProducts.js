@@ -44,9 +44,10 @@ const PanjabiProducts = () => {
             <OtherNav/>
             <MobileMenu />
             {/* <HomeNav></HomeNav> */}
+            <h1 className='text-center text-3xl font-semibold pt-5 cetagory_title'>This Is Shop</h1>
             <div className='grid grid-cols-2'>
                 <div className='mx-5'>
-                    <h1 className='text-left mt-16 text-sm special_otehr_nav'>{panjabi.length} Items</h1>
+                    <h1 className='text-left mt-16 text-sm special_otehr_nav'>Home | Shop </h1>
                 </div>
                 <div className='mx-5 text-right sort-price'>
                     <button type="" className='mt-16 special_otehr_nav' onClick={toggleIsFilterSortDrawer}>Filters & Sort</button>

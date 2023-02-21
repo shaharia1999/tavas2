@@ -9,16 +9,7 @@ const TopBarMenu = () => {
         <Fragment>
             <div className='top-bar-menu w-full  bg-transparent overflow-y-hidden z-10 block relative mt-0 ml-2 ' id="navbar-solid-bg">
                 <ul className='menu justify-center h-auto flex-wrap flex-row p-0 m-0 relative list-none flex'>
-                    {/* <li className='flex justify-center px-5 font-bold mt-8'>
-                        <a href="/">
-                            <button type="" className='cursor-pointer font-gilroy'>Winter Collection</button>
-                        </a>
-                    </li> */}
-                    {/* <li className='flex justify-center px-5 font-bold pt-8'>
-                        <a href="/all-new-panjabis">
-                            <button type="" className='cursor-pointer font-gilroy'>New Arrivals</button>
-                        </a>
-                    </li> */}
+
                     <li className='flex justify-between px-1  pt-8 '>
                         <a href="/panjabis" className='bg-transparent'>
                             <button type="" className='cursor-pointer special '>CLOTH &</button>
@@ -32,26 +23,26 @@ const TopBarMenu = () => {
                             <SlArrowDown className='text-white text-[20px] ml-1  font-semibold '></SlArrowDown>
                         </div>
 
-                        <div className='hidden group-hover:flex flex-col absolute left-[-133px] top-24 p-10 w-screen bg-white text-black duration-300 mt-6 font-gilroy'>
+                        <div className='hidden group-hover:flex flex-col absolute left-[-133px] top-24 p-10 w-screen bg-white text-black duration-300 mt-3 font-gilroy h-[65vh]'>
                             <div className='grid grid-cols-4 gap-5'>
                                 <div className='flex flex-col border-r-2 border-black'>
-                                    <h3 className='mb-4 text-xl'>Categories</h3>
+                                    <h3 className=' text-xl'>Categories</h3>
                                     <a href="/" class="hover:underline hover:text-red-600">New Arrival</a>
                                     <a href="/" class="hover:underline hover:text-red-600">Panjabi</a>
                                     <a href="/" class="hover:underline hover:text-red-600">New Arrival</a>
                                     <a href="/" class="hover:underline hover:text-red-600">New Arrival</a>
                                 </div>
                                 <div className='flex flex-col border-r-2 border-black'>
-                                    <h3 className='mb-4 text-xl'>Size Guides</h3>
+                                    <h3 className=' text-xl'>Size Guides</h3>
                                     <a href="/" class="hover:underline hover:text-red-600">Panjabis</a>
                                     <a href="/" class="hover:underline hover:text-red-600">Shirts</a>
                                     <a href="/" class="hover:underline hover:text-red-600">Pants</a>
                                 </div>
                                 <div className='flex flex-col border-r-2 border-black'>
-                                    <img src={Megamenu1} className="h-96 w-96" alt="" />
+                                    <img src={Megamenu1} className="h-[100%] w-96" alt="" />
                                 </div>
                                 <div className='flex flex-col'>
-                                    <img src={Megamenu2} className="h-96 w-96" alt="" />
+                                    <img src={Megamenu2} className="h-[100%] w-96" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -60,11 +51,7 @@ const TopBarMenu = () => {
                         <button type="" className='cursor-pointer 	special'>ACCESSORIES  </button>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                     </li>
-                  
-                   
-                    {/* <li className='flex justify-center px-5 font-bold pt-8'>
-                        <button type="" className='cursor-pointer font-gilroy'>Sale</button>
-                    </li> */}
+            
                 </ul>
             </div>
         </Fragment>

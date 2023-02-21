@@ -1,4 +1,4 @@
-import React, { Fragment, lazy } from 'react';
+import React, { Fragment, lazy, useState } from 'react';
 import { MdFacebook } from 'react-icons/md';
 import { BsInstagram } from 'react-icons/bs';
 import '../../assets/css/style.css';
@@ -7,6 +7,8 @@ import '../../assets/css/style.css';
 const FooterDropdown = lazy(() => import('./footer_dropdown_component_for_mobilemenu/FooterDropdown.js'));
 
 const Footer = () => {
+   
+    
     return (
         <Fragment>
             <div className="bottom-0 w-full">
@@ -90,10 +92,10 @@ const Footer = () => {
                             </div>
                             <div className='w-6/12 lg:w-auto py-0 lg:py-0 mx-0 lg:mx-10'>
                                 <div className='footer-context-block'>
-                                    <div className='footer-context-title pl-2 mb-7'>
-                                        <p className='font-gilroybold text-white pl-2'>You can pay by</p>
+                                    <div className='footer-context-title  mb-7'>
+                                        <p className='font-gilroybold text-white pl-1'>You can pay by</p>
                                     </div>
-                                    <div className='footer-list-menu pl-2'>
+                                    <div className='footer-list-menu '>
                                         <ul className='list-none flex flex-wrap w-44'>
                                             <li className="mb-5 flex-[33.33%] lg:flex-[50%] p-1 lg:p-0">
                                                 <img src="https://kx-ilyn-shop-s3.s3.amazonaws.com/static/images/payment/footer-payment/visa.svg" alt="" />

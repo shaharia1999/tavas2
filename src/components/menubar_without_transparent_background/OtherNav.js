@@ -11,8 +11,6 @@ const OtherNav = () => {
         <Fragment>
             <div className='header-section h-32'>
                 <div className='absolute top-12'>
-                    {/* Top bar container */}
-                    {/* <TopBarMenu /> */}
                     <OtherTopNav></OtherTopNav>
                 </div>
                 <Link to="/">
@@ -21,7 +19,6 @@ const OtherNav = () => {
                         className='absolute w-40 left-2/4 -translate-x-2/4 h-auto top-0'
                     />
                 </Link>
-                {/* <RightNavbarItems /> */}
                 <OtherRight></OtherRight>
             </div>
         </Fragment>

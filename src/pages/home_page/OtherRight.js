@@ -62,13 +62,14 @@ const OtherRight = (props) => {
                         </>
                     </Drawer>
                     {/* <a href="/signin"> */}
-                    <button
+                    <label
                         type="button"
+                        for="my-modal"
                         className='user-menu-btn float-right text-left w-30 ml-6 top-[10px] relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
                         <AiOutlineUser className='text-2xl right-nav-Other' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
-                        <label for="my-modal-3" className='ml-1 special_otehr_nav'>SIGN IN</label>
-                    </button>
+                        <label  className='ml-1 special_otehr_nav'>SIGN IN</label>
+                    </label>
                     {/* </a> */}
                     {/* pop Up */}
 

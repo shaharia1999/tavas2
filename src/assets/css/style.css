@@ -718,7 +718,7 @@ background-color: red;
    width: 100%;
 
 }
-.panjabisProducts_img-dev::before{
+/* .panjabisProducts_img-dev::before{
   content: '';
   position: absolute;
   top:0;
@@ -741,7 +741,7 @@ background-color: red;
   z-index: 1000;
   color: black;
   display: none;
-}
+} */
 .panjabisProducts_img-dev:hover.panjabisProducts_img-dev::before{
     display: block;
 }
