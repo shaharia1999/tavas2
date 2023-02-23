@@ -495,7 +495,7 @@ background-color: red;
  width: 100%;
  position: relative;
  margin-top: 40px;
- padding-right: 40px;
+ /* padding-right: 40px; */
 
 }
 .right-ber-menu2_other{
@@ -503,8 +503,8 @@ background-color: red;
     width: 100%;
     position: relative;
     margin-top: 48px;
-    padding-right: 40px;
-    left: 0%;
+    padding-right: 0;
+   
    
 }
 
@@ -748,6 +748,9 @@ background-color: red;
 .panjabisProducts_img-dev:hover.panjabisProducts_img-dev::after{
     display: block;
 }
+.panjabi_filter{
+  display: none;
+}
 /* ========================panjabi===================== */
 /* ==================== 10. Sidebar End ==================== */
 
@@ -784,6 +787,7 @@ position: relative;
 .second-section-div{
   position: sticky !important;
   top:20px;
+ 
 
 }
 @media screen and (max-width: 640px) {

@@ -16,7 +16,7 @@ const OtherNav = () => {
                 <Link to="/">
                     <img src={siteLogoDark}
                         alt="website logo"
-                        className='absolute w-40 left-2/4 -translate-x-2/4 h-auto top-0'
+                        className='absolute w-48 left-2/4 -translate-x-2/4 h-auto top-0'
                     />
                 </Link>
                 <OtherRight></OtherRight>

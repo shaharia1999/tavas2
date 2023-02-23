@@ -12,18 +12,18 @@ const OtherTopNav = () => {
             <div className='top-bar-menu w-full  bg-transparent overflow-y-hidden z-10 block relative mt-0 ml-2 ' id="navbar-solid-bg">
                 <ul className='menu justify-center h-auto flex-wrap flex-row p-0 m-0 relative list-none flex'>
                     <li className='flex justify-between px-2  pt-8 '>
-                        <a href="/panjabis" className='bg-transparent'>
-                            <button type="" className='cursor-pointer  special_otehr_nav'>CLOTH &</button>
+                        <a href="/panjabis" className='bg-transparent hover:bg-[#E9EBEC]'>
+                            <button type="" className='cursor-pointer  special_otehr_nav '>CLOTH &</button>
                         </a>
-                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
+                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold bg-transparent'></SlArrowDown>
                     </li>
                     <li className='flex justify-between px-2  pt-8 group'>
                         {/* shop-btn */}
-                        <div className='bg-transparent'>
-                            <button type="" className='cursor-pointer special_otehr_nav'>SHOP </button>
+                        <div className='bg-transparent hover:bg-[#E9EBEC]'>
+                            <button type="" className='cursor-pointer special_otehr_nav '>SHOP </button>
                             <SlArrowDown className='text-black text-[20px] ml-1  font-semibold '></SlArrowDown>
                         </div>
-                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
+                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold bg-transparent'></SlArrowDown>
                         <div className='hidden group-hover:flex flex-col absolute left-[-133px] top-24 p-10 w-screen bg-white text-black duration-300 mt-3 font-gilroy h-[65vh]'>
                             <div className='grid grid-cols-4 gap-5'>
                                 <div className='flex flex-col border-r-2 border-black'>
@@ -49,8 +49,8 @@ const OtherTopNav = () => {
                         </div>
                     </li>
                     <li className='flex justify-between px-2  pt-8 '>
-                        <button type="" className='cursor-pointer 	special_otehr_nav'>ACCESSORIES  </button>
-                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
+                        <button type="" className='cursor-pointer 	special_otehr_nav hover:bg-[#E9EBEC]'>ACCESSORIES  </button>
+                        <SlArrowDown className='text-white ml-2 mt-1 font-semibold bg-transparent'></SlArrowDown>
                     </li>
 
 

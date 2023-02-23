@@ -38,17 +38,27 @@ const RightNavbarItems = (props) => {
     return (
         <Fragment>
       
-            <div className='top-bar-container '>
+            <div className='top-bar-container bg-red-900'>
                 {/* site logo */}
                 <div className='  right-ber-menu2 z-10 relative '>
                     {/* cart button */}
-                    <button
+                    {/* <button
                         type="button"
-                        className='shopping-cart-btn float-right text-left w-30 mt-[5px]   cursor-pointer -translate-x-1/2 flex items-center  '
+                        className='shopping-cart-btn float-right text-left w-30  py-3 px-4  cursor-pointer -translate-x-1/2 flex items-center hover:bg-[#141E41] '
                         onClick={toggleDrawer}
                     >
                         <IoBagOutline className='text-2xl right-nav' />
                         <span className='ml-1 pt-1 special'>{CartCount}</span>
+                    </button> */}
+                    <button
+                        type="button"
+                        className='search-menu-btn float-right text-left w-30 ml-1 relative bg-transparent   cursor-pointer -translate-x-1/2 flex items-center py-3 px-4 hover:bg-[#141E41]'
+                        onClick={() => {
+                            setSer((prevState) => !prevState)
+                        }}
+                    >
+                        <IoBagOutline className='text-2xl right-nav' />
+                        <span className='ml-1 special'>CART</span>
                     </button>
                     <Drawer
                         open={isOpen}
@@ -65,7 +75,7 @@ const RightNavbarItems = (props) => {
                         <label
                             type="button"
                         for="my-modal"
-                        className='user-menu-btn float-right text-left w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center mt-[10px]  z-50"'>
+                        className='user-menu-btn float-right text-left w-30 ml-1 relative bg-transparent py-3 px-4 hover:bg-[#141E41] cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
                             <AiOutlineUser className='text-2xl right-nav' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
                         <label  className='ml-1 special'>SIGN IN</label>
@@ -75,7 +85,7 @@ const RightNavbarItems = (props) => {
                     
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 ml-6 relative bg-transparent mt-[10px]  cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left w-30 ml-1 relative bg-transparent   cursor-pointer -translate-x-1/2 flex items-center py-3 px-4 hover:bg-[#141E41]'
                         onClick={() => {
                             setSer((prevState) => !prevState)
                         }}
@@ -85,7 +95,7 @@ const RightNavbarItems = (props) => {
                     </button>
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 mt-[10px]  ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left w-30  py-3 px-4 ml-1 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center hover:bg-[#141E41]'
                         onClick={toggleSearch}
                     >
                         <GiSelfLove className='text-2xl right-nav' />

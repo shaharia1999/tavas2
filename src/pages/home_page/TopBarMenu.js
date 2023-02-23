@@ -11,14 +11,14 @@ const TopBarMenu = () => {
                 <ul className='menu justify-center h-auto flex-wrap flex-row p-0 m-0 relative list-none flex'>
 
                     <li className='flex justify-between px-1  pt-8 '>
-                        <a href="/panjabis" className='bg-transparent'>
+                        <a href="/panjabis" className='bg-transparent hover:bg-[#141E41] hover:text-black '>
                             <button type="" className='cursor-pointer special '>CLOTH &</button>
                         </a>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                     </li>
                     <li className='flex justify-between px-1 pt-8 group'>
                         {/* shop-btn */}
-                        <div className='bg-transparent'>
+                        <div className='bg-transparent hover:bg-[#141E41]'>
                             <button type="" className='cursor-pointer special '>SHOP </button>
                             <SlArrowDown className='text-white text-[20px] ml-1  font-semibold '></SlArrowDown>
                         </div>
@@ -48,7 +48,7 @@ const TopBarMenu = () => {
                         </div>
                     </li>
                     <li className='flex justify-between px-2  pt-8 '>
-                        <button type="" className='cursor-pointer 	special'>ACCESSORIES  </button>
+                        <button type="" className='cursor-pointer hover:bg-[#141E41]	special'>ACCESSORIES  </button>
                         <SlArrowDown className='text-white ml-2 mt-1 font-semibold'></SlArrowDown>
                     </li>
             

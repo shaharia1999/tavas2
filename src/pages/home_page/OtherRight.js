@@ -41,14 +41,16 @@ const OtherRight = (props) => {
             <div className='top-bar-container  '>
                 {/* site logo */}
                 <div className='  right-ber-menu2_other z-10 relative '>
-                    {/* cart button */}
+                
                     <button
                         type="button"
-                        className='shopping-cart-btn float-right text-left pt-1 w-30 cursor-pointer -translate-x-1/2 flex items-center  '
-                        onClick={toggleDrawer}
+                        className='search-menu-btn float-right text-left w-30 ml-1  relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center py-3 px-4  hover:bg-[#E9EBEC]'
+                        onClick={() => {
+                            setSer((prevState) => !prevState)
+                        }}
                     >
                         <IoBagOutline className='text-2xl right-nav-Other' />
-                        <span className='ml-1 pt-1 special_otehr_nav'>{CartCount}</span>
+                        <span className='ml-1 special_otehr_nav'>CART</span>
                     </button>
                     <Drawer
                         open={isOpen}
@@ -65,7 +67,7 @@ const OtherRight = (props) => {
                     <label
                         type="button"
                         for="my-modal"
-                        className='user-menu-btn float-right text-left w-30 ml-6 top-[10px] relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center  z-50"'>
+                        className='user-menu-btn float-right text-left w-30 ml-1 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center hover:bg-[#E9EBEC]  z-50 py-3 px-4 '>
                         <AiOutlineUser className='text-2xl right-nav-Other' />
                         {/* <span className='ml-1 special ' for="my-modal">SIGN IN</span> */}
                         <label  className='ml-1 special_otehr_nav'>SIGN IN</label>
@@ -75,7 +77,7 @@ const OtherRight = (props) => {
 
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left w-30 ml-6 top-[10px] relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left w-30 ml-1  relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center py-3 px-4  hover:bg-[#E9EBEC]'
                         onClick={() => {
                             setSer((prevState) => !prevState)
                         }}
@@ -85,7 +87,7 @@ const OtherRight = (props) => {
                     </button>
                     <button
                         type="button"
-                        className='search-menu-btn float-right text-left top-[10px] w-30 ml-6 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center'
+                        className='search-menu-btn float-right text-left  w-30 ml-1 relative bg-transparent cursor-pointer -translate-x-1/2 flex items-center py-3 px-4  hover:bg-[#E9EBEC]'
                         onClick={toggleSearch}
                     >
                         <GiSelfLove className='text-2xl right-nav-Other' />
