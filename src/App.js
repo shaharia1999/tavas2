@@ -20,6 +20,10 @@ import PusNotification from './components/PusNotification/PusNotification';
 import NewCard from './components/NewCard/NewCard';
 import NewChackout from './components/NewChackout/NewChackout';
 import E404 from './components/404/E404';
+import Sing_upFirst from './components/SingUpandLogin/Sing_upFirst';
+import SingUpsecond from './components/SingUpandLogin/SingUpsecond';
+import Login from './components/SingUpandLogin/Login';
+import ForgetPassword from './components/SingUpandLogin/ForgetPassword';
 
 // components
 const TopNotificationBar = lazy(() => import('./components/top_notification_bar/NotificationBar.js'));
@@ -105,6 +109,10 @@ const App = () => {
           <Route path='/newCard' element={<NewCard></NewCard>} />
           <Route path='/newCheckout' element={<NewChackout></NewChackout>} />
           <Route path='/myAccount' element={<MyAccountNew/>} />
+          <Route path='/sing_upFirst' element={<Sing_upFirst/>} />
+          <Route path='/sing_upSecend' element={<SingUpsecond/>} />
+          <Route path='/login' element={<Login></Login>} />
+          <Route path='/forgetPass' element={<ForgetPassword></ForgetPassword>} />
 
         </Routes>
         <Footer />
