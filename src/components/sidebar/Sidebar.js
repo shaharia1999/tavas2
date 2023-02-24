@@ -14,13 +14,13 @@ const Sidebar = () => {
 
     return (
         <Fragment>
-            <div className="w-60 h-auto  pt-5 absolute sidebar-section">
-                <ul className="relative  z-50 pr-10">
+            <div className=" h-auto  pt-5  ">
+                <ul className="relative  ">
                     {
                         sidebar.map((data, index) => {
                             return (
                                 <li className="relative" key={index}>
-                                    <a className="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-white hover:bg-black active:bg-black transition duration-300 ease-in-out" href={data.urlLink} data-mdb-ripple="true" data-mdb-ripple-color="dark">{data.name}</a>
+                                    <a className="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-[20px] whitespace-nowrap rounded hover:text-white hover:bg-black active:bg-black transition duration-300 ease-in-out" href={data.urlLink} data-mdb-ripple="true" data-mdb-ripple-color="dark">{data.name}</a>
                                 </li>
                             )
                         })

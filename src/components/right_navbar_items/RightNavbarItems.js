@@ -38,7 +38,7 @@ const RightNavbarItems = (props) => {
     return (
         <Fragment>
       
-            <div className='top-bar-container bg-red-900'>
+            <div className='top-bar-container '>
                 {/* site logo */}
                 <div className='  right-ber-menu2 z-10 relative '>
                     {/* cart button */}

@@ -19,6 +19,7 @@ import OpeningpopUp from './components/OpeningPopUp/OpeningpopUp';
 import PusNotification from './components/PusNotification/PusNotification';
 import NewCard from './components/NewCard/NewCard';
 import NewChackout from './components/NewChackout/NewChackout';
+import E404 from './components/404/E404';
 
 // components
 const TopNotificationBar = lazy(() => import('./components/top_notification_bar/NotificationBar.js'));
@@ -88,7 +89,9 @@ const App = () => {
           <Route path='/shipping-policy' element={<ShoppingPolicy/>} />
           <Route path='/contact-us' element={<ContactUs />} />
           <Route path='/intellectual-property' element={<IntellectualProperty />} />
+          <Route path='/error' element={<E404 />} />
           <Route path='/loyalty-program' element={<LotaraliProgram></LotaraliProgram>} />
+
           <Route path='/exchange-return' element={<Return/>} />
           <Route path='/payment-policy' element={<PaymentPolicy />} />
           <Route path='/payment-policy' element={<PaymentPolicy />} />

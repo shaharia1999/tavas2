@@ -15,11 +15,11 @@ const PaymentPolicy = () => {
             {/* <Navbar /> */}
             <OtherNav></OtherNav>
             <MobileMenu />
-            <div className='flex mx-auto container h-full pt-20 lg:pt-0 lg:mt-10'>
-                <div className='w-1/6 pt-5'>
+            <div className='flex mx-auto  h-full pt-20 lg:pt-0 lg:mt-10'>
+                <div className='lg:w-1/6 w-2/6 pt-5'>
                     <Sidebar />
                 </div>
-                <div className='px-5 lg:px-0 md:px-0 lg:w-5/6 md:w-5/6'>
+                <div className='px-5 lg:px-3 md:px-0 lg:w-5/6 md:w-5/6'>
                     <h1 className='text-3xl font-bold py-10 text-center lg:text-left'>Payment Policy</h1>
                     <p className='text-justify'>
                         To begin purchasing from the site (www.ilyn.global) or platform, you may be required to register using a valid phone number and password. It is your sole responsibility to keep such information/log-in details secure. We shall not be held responsible if such information/log-in details are provided to a third party by the customer or if any third party receives the same due to the negligence of the customer and for any loss incurred as a result of the above-mentioned incidents (unauthorized access to data).

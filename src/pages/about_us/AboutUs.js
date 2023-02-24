@@ -12,8 +12,8 @@ const AboutUs = () => {
         <Fragment>
             <Navbar />
             <MobileMenu />
-            <div className='flex mx-auto container h-full pt-20 lg:pt-0 lg:mt-16'>
-                <div className='w-1/6 pt-5'>
+            <div className='flex mx-auto  h-full pt-20 lg:pt-0 lg:mt-16'>
+                <div className='lg:w-1/6 w-2/6 pt-5'>
                     <Sidebar />
                 </div>
                 <div className='px-5 lg:px-0 md:px-0 lg:w-5/6 md:w-5/6'>

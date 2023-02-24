@@ -15,7 +15,7 @@ const Contact = () => {
         <Fragment>
             <OtherNav></OtherNav>
             <MobileMenu />
-            <div className='grid grid-cols-2 gap-4 container mx-auto pt-24 lg:pt-0 px-10 lg:px-56'>
+            <div className='grid grid-cols-2 gap-4 container mx-auto pt-24 lg:pt-0 px-10 lg:px-56 mt-8'>
                 <div>
                     {/* Call section */}
                     <div className='flex flex-row place-items-center'>

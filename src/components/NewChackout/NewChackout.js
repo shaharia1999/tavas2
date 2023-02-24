@@ -98,14 +98,14 @@ const NewChackout = () => {
                     <div className='border pb-10'>
                     <div className='flex w-[100%] bg-[#121d45] text-white py-3 mt-10'>
                      
-                            <h3 className='text-white ml-10 cetagory_title1'>SHIPPING ADDRESS</h3>
+                            <h3 className='text-white ml-10 cetagory_title1'>SHIPPING METHOD</h3>
 
                     </div>
                     <div className='flex justify-between'>
                             <div className="flex items-center mt-4">
                                 <label className="flex items-center text-sm group text-heading">
-                                    <input type="checkbox"
-                                        className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
+                                    {/* <input type="radio"
+                                        className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" /> */}
                                     <span className="ml-2 font-bold ">Save this information for next time</span></label>
                             </div>
                             <p className='pr-5 pt-5 font-bold'>2000</p>
@@ -118,25 +118,25 @@ const NewChackout = () => {
                             <h3 className='text-white ml-10 cetagory_title1'>PAYMENT METHOD</h3>
 
                     </div>
-                    <div className=''>
+                    <div className='pl-1'>
                             <div className="flex items-center mt-4">
                                 <label className="flex items-center text-sm group text-heading">
-                                    <input type="checkbox"
-                                        className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
+                                    <input type="radio"
+                                        className="w-5 h-5 " />
                                     <span className='ml-2 '><img src={bkash} className='w-10'></img></span>
                                     <span className="ml-2 font-bold ">BKash</span></label>
                             </div>
                             <div className="flex items-center mt-4">
                                 <label className="flex items-center text-sm group text-heading">
-                                    <input type="checkbox"
-                                        className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
+                                    <input type="radio"
+                                        className="w-5 h-5  " />
                                     <span className='ml-2'><BsMinecart className='ml-2 text-2xl w-10'></BsMinecart></span>
                                     <span className="ml-2 font-bold ">International debit/credit cards</span></label>
                             </div>
                             <div className="flex items-center mt-4">
                                 <label className="flex items-center text-sm group text-heading">
-                                    <input type="checkbox"
-                                        className="w-5 h-5 border border-gray-300 rounded focus:outline-none focus:ring-1" />
+                                    <input type="radio"
+                                        className="w-5 h-5 " />
                                     <span className='ml-2'><MdLocalShipping className='ml-2 text-2xl w-10'></MdLocalShipping></span>
                                     <span className="ml-2 font-bold ">Cash on delivery</span></label>
                             </div>

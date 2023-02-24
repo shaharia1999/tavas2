@@ -32,7 +32,7 @@ const MyAccountNew = () => {
         <OtherNav></OtherNav>
         <h1 className='font-arial text-2xl font-semibold ml-10 lg:mt-10'>MyAccount</h1>
         <div className='lg:flex'>
-            <div className='myAccout_ul'>
+            <div className='myAccout_ul lg:w-[20%]'>
                 <ul>
                     <li>Account Information </li>
                     <li>Address Book  </li>
@@ -49,8 +49,8 @@ const MyAccountNew = () => {
                            Opening Account Info
                            
              */}
-                <div className='grid lg:grid-cols-3 content-center md:grid-cols-4 grid-cols-1 gap-6 pb-5 justify-center mx-5'>
-                      <div className='opening-myAccount'>
+                <div className='grid lg:grid-cols-3 content-center md:grid-cols-4 grid-cols-1 gap-6 pb-5 justify-center mx-5 ml-10'>
+                      <div className='opening-myAccount border'>
                         <img src={img2}></img>
                         <div className='flex justify-center '> 
                             <button className='absolute bottom-[80px] bg-white p-5 radious'>
@@ -68,7 +68,7 @@ const MyAccountNew = () => {
                       
                         
                       </div>
-                      <div className='opening-myAccount'>
+                      <div className='opening-myAccount border'>
                         <img src={img3}></img>
                         <div className='flex justify-center '> 
                             <button className='absolute bottom-[80px] bg-white p-5 radious'>
@@ -86,7 +86,7 @@ const MyAccountNew = () => {
                       
                         
                       </div>
-                      <div className='opening-myAccount'>
+                      <div className='opening-myAccount border'>
                         <img src={img2}></img>
                         <div className='flex justify-center '> 
                             <button className='absolute bottom-[80px] bg-white p-5 radious'>
@@ -294,7 +294,7 @@ const MyAccountNew = () => {
                         <div className='flex justify-between py-4 px-8'>
                             <div>
                                 <p className='font-semibold'>First Name</p>
-                                {/* <p className='py-3'>Md</p> */}
+                             
                                 <input placeholder='First Name ' className='py-2 px-10 border'></input>
                             </div>
                             <div>

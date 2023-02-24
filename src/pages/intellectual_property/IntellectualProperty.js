@@ -13,11 +13,11 @@ const IntellectualProperty = () => {
         <Fragment>
             <Navbar />
             <MobileMenu />
-            <div className='flex mx-auto container py-5 h-full pt-20 lg:pt-0 lg:mt-10'>
-                <div className='w-1/6 pt-5'>
+            <div className='flex mx-auto  py-5 h-full pt-20 lg:pt-0 lg:mt-10'>
+                <div className='lg:w-1/6 w-2/6 pt-5'>
                     <Sidebar />
                 </div>
-                <div className='px-5 lg:px-0 md:px-0 lg:w-5/6 md:w-5/6'>
+                <div className='px-5 lg:px-3 md:px-0 lg:w-5/6 md:w-5/6'>
                     <h1 className='text-3xl font-bold py-10 text-center lg:text-left'>Intellectual Property</h1>
                     <p className='font-bold'>General Terms</p>
                     <p className='text-justify'>If you proceed to use TAVAAS's website (www.ilyn.global) and its platforms, you are expected to abide by all the Legal Notes included here and these are governed by and will be interpreted according to the laws of the People’s Republic of Bangladesh. Here, “We”, “Us”, “Our”, “Website”, “Site”, “System”, “Platforms” includes (All Social Media, Mobile App, Wearable Technology) will refer to TAVAAS and “You”, “Your”, “User” will refer to Customers and Visitors. If you cannot abide by all the Legal Notes enlisted, please refrain from using the website and its other platforms and affiliates. You must agree to use the website only for your own personal and non-commercial purposes.</p>
