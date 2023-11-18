@@ -1,4 +1,4 @@
-live : https://nexttavaas.vercel.app/
+live : next-tavaas.vercel.app
 
 other live link
 ## team Work 
